@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Form Đăng Ký</title>
 </head>
 <body>
-<form>
-    <p><b> Họ và tên: </b></p>
-    <input type="text" name="name" />
-    <p><b> Email:</b></p>
-    <input type="text" name="email" />
-    <p><b> Số điện thoại: </b></p>
-    <input type="number" name="phone" />
-    <p><b> Giới tính: </b></p>
+<form action=" " method="post" >
+    <label for="name"><b>Họ và tên :</b></b></label>
+    <br>
+    <input type="text" id="name" name="name" />
+    <br>
+    <label for="email"><b>Email :</b></label>
+    <br>
+    <input type="text" id="email" name="email" />
+    <br>
+        <label for="number"><b>Số điện thoại :</b></label>
+    <br>
+    <input type="number" id="number" name="phone" />
+    <br>
+    <label><b>Giới tính:</b></label>
+    <br>
     <input type="radio" name="gender" /><b>Nam</b>
-    <input type="radio" name="gender" /><b>Nữ</b>
+    <input type="radio" name="gender" /><b>Nữ</b> <br>
     <input type="submit" value="Đăng ký" />
 </form>
 </body>
