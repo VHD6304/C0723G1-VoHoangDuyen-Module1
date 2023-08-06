@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cecb2eb-515e-408e-bd98-f1a01de205a1" name="Changes" comment="" />
+    <list default="true" id="8cecb2eb-515e-408e-bd98-f1a01de205a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/Tạo form lấy survey khách hàng.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/Tạo form lấy survey khách hàng.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/Tạo giao diện form đăng ký người dùng.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/Tạo giao diện form đăng ký người dùng.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,6 +70,9 @@
       <workItem from="1691076929378" duration="204000" />
       <workItem from="1691154276184" duration="3960000" />
       <workItem from="1691174542751" duration="370000" />
+      <workItem from="1691256121303" duration="27000" />
+      <workItem from="1691257928451" duration="107000" />
+      <workItem from="1691259188876" duration="594000" />
     </task>
     <servers />
   </component>
