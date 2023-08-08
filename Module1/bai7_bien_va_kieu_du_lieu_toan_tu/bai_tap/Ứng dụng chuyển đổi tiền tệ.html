@@ -23,32 +23,27 @@
                 <option value="USD">USD</option>
             </select>
         </td>
-        <td><button onclick="convert()">Convert</button></td>
+        <td><button onclick="handleClick()">Convert</button></td>
     </tr>
 </table>
 <br>
-<p id="result"></p>
+<div id="result"></div>
 <script>
-    function convert() {
-        let Result;
+    function handleClick() {
+        let Result = 0;
         let Amount = document.getElementById("Amount").value;
-        let FromCurrency = document.getElementById("FC").value;
-        let ToCurrency = document.getElementById("TC").value;
-        if (FromCurrency == "USD" && ToCurrency == "VND") {
+        let FC = document.getElementById("FC").value;
+        let TC = document.getElementById("TC").value;
+        if (FC == "USD" && TC == "VND") {
             Result = Amount * 23000;
-            document.getElementById("result").innerHTML = "Result" + Result;
-        } else if (FromCurrency == "VND" && ToCurrency == "USD") {
+        } else if (FC == "VND" && TC == "USD") {
             Result = Amount / 23000;
-            document.getElementById("result").innerHTML = "Resllt:" + Result;
-        } else if (FromCurrency == "VND" && ToCurrency == "VND") {
+        } else
+        {
             Result = Amount;
-            document.getElementById("result").innerHTML = "Resllt:" + Result;
-        } else if (FromCurrency == "USD" && ToCurrency == "USD") {
-            Result = Amount;
-            document.getElementById("result").innerHTML = "Resllt:" + Result;
         }
+        document.getElementById("result").innerText= "Result: "  + Result;
     }
-
 </script>
 </body>
 </html>

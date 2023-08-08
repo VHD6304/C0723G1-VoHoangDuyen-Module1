@@ -8,14 +8,14 @@
 <script>
     nhapdiemvatly = prompt("Nhập điểm vật lý:");
     nhapdiemhoahoc = prompt("Nhập điểm hóa học:");
-    nhapdiemsinhhoc = prompt("Nhập điểm sinh học");
-    let ly = parseInt(nhapdiemvatly);
-    let hoa = parseInt(nhapdiemhoahoc);
-    let sinh = parseInt(nhapdiemsinhhoc);
-    let tong = ly + hoa + sinh;
-    let dtb = (ly + hoa + sinh) / 3;
-    document.write ("Tổng điểm là: " + tong);
-    document.write("Điểm trung bình là: " + dtb);
+    nhapdiemsinhhoc = prompt("Nhập điểm sinh học:");
+    let physics = parseInt(nhapdiemvatly);
+    let chemistry = parseInt(nhapdiemhoahoc);
+    let biology = parseInt(nhapdiemsinhhoc);
+    let Sum = physics + chemistry + biology;
+    let Average = (physics + chemistry + biology) / 3;
+    document.write ("Tổng điểm là: " + Sum);
+    document.write("<br>Điểm trung bình là: " + Average);
 </script>
 </body>
 </html>

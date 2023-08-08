@@ -7,11 +7,11 @@
 <body>
     <label for="nhapdoC"></label>
     <input type="number" id="nhapdoC" name="Độ C" placeholder="Độ c (Celsius) ">
-    <button onclick="quydoinhietdo()">Nhập</button>
-    <p id="result"></p>
+    <button onclick="handleClick()">Nhập</button>
+    <div id="result"></div>
 <script>
     let result;
-    function quydoinhietdo() {
+    function handleClick() {
         let nhapdoC = document.getElementById("nhapdoC").value;
         let F = (9 * nhapdoC) / 5 + 32;
         document.getElementById("result").innerHTML = "Result:" + F;

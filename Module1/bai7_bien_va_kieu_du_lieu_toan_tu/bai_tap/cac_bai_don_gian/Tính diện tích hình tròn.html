@@ -6,9 +6,8 @@
 </head>
 <body>
 <script>
-    nhapbankinh = prompt("Nhập bán kính đường tròn")
-    let r =parseInt(nhapbankinh);
-    let R = (r^2)*3.14;
+    r = +prompt("Nhập bán kính đường tròn:")
+    let R = (r*r) * 3.14;
     document.write("Diện tích hình tròn là: " + R);
 </script>
 </body>
