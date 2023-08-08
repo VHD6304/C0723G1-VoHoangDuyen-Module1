@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <th><label for="amount">Amount</label></th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+    <tr>
+        <td><input type="number" name="amount" id="Amount"></td>
+        <td>
+            <select id="FC" style="width: 50px" name="vnd">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="TC" style="width: 50px" name="usd">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td><button onclick="convert()">Convert</button></td>
+    </tr>
+</table>
+<br>
+<p id="result"></p>
+<script>
+    function convert() {
+        let Result;
+        let Amount = document.getElementById("Amount").value;
+        let FromCurrency = document.getElementById("FC").value;
+        let ToCurrency = document.getElementById("TC").value;
+        if (FromCurrency == "USD" && ToCurrency == "VND") {
+            Result = Amount * 23000;
+            document.getElementById("result").innerHTML = "Result" + Result;
+        } else if (FromCurrency == "VND" && ToCurrency == "USD") {
+            Result = Amount / 23000;
+            document.getElementById("result").innerHTML = "Resllt:" + Result;
+        } else if (FromCurrency == "VND" && ToCurrency == "VND") {
+            Result = Amount;
+            document.getElementById("result").innerHTML = "Resllt:" + Result;
+        } else if (FromCurrency == "USD" && ToCurrency == "USD") {
+            Result = Amount;
+            document.getElementById("result").innerHTML = "Resllt:" + Result;
+        }
+    }
+
+</script>
+</body>
+</html>

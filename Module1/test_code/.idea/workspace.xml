@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cecb2eb-515e-408e-bd98-f1a01de205a1" name="Changes" comment="" />
+    <list default="true" id="0311deb4-b385-4ba2-8c0e-d8d0151a0b09" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../bai6_tong_quan_javascript/thuc_hanh/Hiển thị đầu ra.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai4_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai4_html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/tao_form_don_gian/Sở thích cua bạn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/tao_form_don_gian/Sở thích cua bạn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/tao_form_don_gian/Đăng ký học viên.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai5_html_form_table/bai_tap/tao_form_don_gian/Đăng ký học viên.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai5_html_form_table/thuc_hanh/Tạo form cơ bản.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai5_html_form_table/thuc_hanh/Tạo form cơ bản.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test code.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -21,9 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2TSQLtalnNAQlCE5J5Q2cpEjAuF" />
+  <component name="ProjectId" id="2TZgkMvWoWHEYAxdpqNcAimmcfR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,7 +44,6 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CODEGYM/C0723G1-VoHoangDuyen/Module1/bai4_html/bai_tap&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -44,32 +51,21 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CODEGYM\C0723G1-VoHoangDuyen\Module1\bai4_html\bai_tap" />
-      <recent name="D:\CodeGym\C0723G1-VoHoangDuyen\Module1\bai4_html\bai_tap" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CodeGym\C0723G1-VoHoangDuyen\Module1\bai4_html\thuc_hanh" />
-    </key>
+  <component name="RunManager">
+    <configuration name="Test code.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="Test code.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8cecb2eb-515e-408e-bd98-f1a01de205a1" name="Changes" comment="" />
-      <created>1691033949869</created>
+      <changelist id="0311deb4-b385-4ba2-8c0e-d8d0151a0b09" name="Changes" comment="" />
+      <created>1691256158231</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1691033949869</updated>
-      <workItem from="1691033950873" duration="18039000" />
-      <workItem from="1691076846429" duration="50000" />
-      <workItem from="1691076929378" duration="204000" />
-      <workItem from="1691154276184" duration="3960000" />
-      <workItem from="1691174542751" duration="370000" />
-      <workItem from="1691256121303" duration="27000" />
-      <workItem from="1691257928451" duration="107000" />
-      <workItem from="1691259188876" duration="594000" />
-      <workItem from="1691309994852" duration="8000" />
+      <updated>1691256158231</updated>
+      <workItem from="1691256159242" duration="10751000" />
+      <workItem from="1691316238253" duration="1006000" />
     </task>
     <servers />
   </component>

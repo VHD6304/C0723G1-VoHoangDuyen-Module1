@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70fc43a0-3020-4a7c-ad1a-7d8c4bf41f5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../bai5_html_form_table/thuc_hanh/Tạo bảng nâng cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai6_tong_quan_javascript/thuc_hanh/Hiển thị đầu ra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai6_tong_quan_javascript/thuc_hanh/Nhúng JavaScript.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai6_tong_quan_javascript/thuc_hanh/Sự kiện onmouseover và onmouseout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai6_tong_quan_javascript/thuc_hanh/Sự kiện đầu ra Onchange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai6_tong_quan_javascript/thuc_hanh/TestCode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai6_tong_quan_javascript/thuc_hanh/Tính tổng 2 số nhập từ bàn phím.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chuyển độ C sang F.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HIển thị tổng điểm và trung bình cộng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/Cho chiều dài và rộng. In ra màn hình diện tích của hình chữ nhật.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/Khai báo và sử dụng biến.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/Kiểm tra xem a có phải là bội số của b hay không.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thuc_hanh/Sử dụng toán tử.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai4_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai4_html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai5_html_form_table/bai_tap/tao_form_don_gian/Sở thích cua bạn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai5_html_form_table/bai_tap/tao_form_don_gian/Sở thích cua bạn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai5_html_form_table/bai_tap/tao_form_don_gian/Đăng ký học viên.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai5_html_form_table/bai_tap/tao_form_don_gian/Đăng ký học viên.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai5_html_form_table/thuc_hanh/Tao bảng cơ bảng.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai5_html_form_table/thuc_hanh/Tao bảng cơ bảng.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai5_html_form_table/thuc_hanh/Tạo form cơ bản.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai5_html_form_table/thuc_hanh/Tạo form cơ bản.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test_code/Test code.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2TeRHFjpBVXJwCjMsPksVTwWsv3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/CODEGYM/C0723G1-VoHoangDuyen/Module1/bai7_bien_va_kieu_du_lieu_toan_tu/bai_tap",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70fc43a0-3020-4a7c-ad1a-7d8c4bf41f5a" name="Changes" comment="" />
+      <created>1691401469874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691401469874</updated>
+      <workItem from="1691401470895" duration="2231000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

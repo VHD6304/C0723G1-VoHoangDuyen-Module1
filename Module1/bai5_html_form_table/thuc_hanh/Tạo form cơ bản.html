@@ -5,40 +5,34 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Order Form</h1>
-<h2>What would you like to buy?</h2>
-<form>
-    <select name = "dropdown">
-        <option value = "A" selected>A</option>
-        <option value = "B" selected>B</option>
-        <option value = "C" selected>C</option>
-        <option value = "D" selected>D</option>
+<style>
+    body {
+        font-family: "Lucida Sans Unicode", Tahoma, sans-serif
+    }
+</style>
+<form action="" method="post">
+    <label for="email"></label><h2>Order Form</h2>
+    <label for="email"></label><p>What would you like to buy?</p>
+    <select style="width: 200px" name="dropdown" >
+        <option value= "A" selected>A</option>
+        <option value= "B" selected>B</option>
+        <option value= "C" selected>C</option>
+        <option value= "D" selected>D</option>
     </select>
-</form>
-<h2>How many would you like to order?</h2>
-<form>
-    <input type = "radio" name = "subject" value = "1 - $10">1 - $10
+    <label for="email"></label><p>How many would you like to order?</p>
+    <input type="radio" name="subject" value="1 - $10">1 - $10
     <br>
-    <input type = "radio" name = "subject" value = "2 - $20">2 - $20
+    <input type="radio" name="subject" value="2 - $20">2 - $20
     <br>
-    <input type = "radio" name = "subject" value = "3 - $25">3 - $25
+    <input type="radio" name="subject" value="3 - $25">3 - $25
+    <label for="email"></label><p>Name*</p>
+    <input type="text" name="first name" placeholder="FirstName"/>
+    <input type="text" name="last name" placeholder="LastName"/>
+    <label for="email"></label><p>Email</p>
+    <input type="email" id="email" name="email">
+    <label for="email"></label><p>PHONE NUMBER</p>
+    <input type="number" name="phonenumber"> <br>
+    <input type="submit" value="Sumit">
 </form>
-<h2>Name*</h2>
-<form>
-    First name: <input type = "text" name = "first name"/>
-    <br>
-    Last name: <input type = "text" name = "last name"/>
-    <h2>Email</h2>
-    <form
-            action = "/action _page.php:>
-    <input name ="account" type"/>
-</form>
-
-</form>
-
-
-
-
-
 </body>
 </html>

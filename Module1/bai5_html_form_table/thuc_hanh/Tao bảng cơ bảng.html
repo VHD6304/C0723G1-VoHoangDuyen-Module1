@@ -4,7 +4,22 @@
     <title> Table simple </title>
 </head>
 <body>
-<table>
+<style>
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+    td, th {
+        border: 1px soid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even){
+        background-color: #dddddd;
+    }
+</style>
+<table border="1">
     <tr>
         <th>Company</th>
         <th>Contact</th>

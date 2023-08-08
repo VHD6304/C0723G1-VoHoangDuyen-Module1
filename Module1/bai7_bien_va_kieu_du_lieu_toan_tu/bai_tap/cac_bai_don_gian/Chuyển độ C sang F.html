@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label for="nhapdoC"></label>
+    <input type="number" id="nhapdoC" name="Độ C" placeholder="Độ c (Celsius) ">
+    <button onclick="quydoinhietdo()">Nhập</button>
+    <p id="result"></p>
+<script>
+    let result;
+    function quydoinhietdo() {
+        let nhapdoC = document.getElementById("nhapdoC").value;
+        let F = (9 * nhapdoC) / 5 + 32;
+        document.getElementById("result").innerHTML = "Result:" + F;
+    }
+</script>
+</body>
+</html>
