@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+    <input type="text" id="ketqua">
+<table>
+    <tr>
+        <th>
+            <button type="button" id="mot" onclick="mot()">1</button>
+        </th>
+        <th>
+            <button type="button" id="hai" onclick="hai()">2</button>
+        </th>
+        <th>
+            <button type="button" id="ba" onclick="ba()">3</button>
+        </th>
+        <th>
+            <button type="button" onclick="handleadd()" value="+">+</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" id="bon" onclick="bon()">4</button>
+        </th>
+        <th>
+            <button type="button" id="nam" onclick="nam()">5</button>
+        </th>
+        <th>
+            <button type="button" id="sau" onclick="sau()">6</button>
+        </th>
+        <th>
+            <button type="button" onclick="handlesub()">-</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" id="bay" onclick="bay()">7</button>
+        </th>
+        <th>
+            <button type="button" id="tam" onclick="tam()">8</button>
+        </th>
+        <th>
+            <button type="button" id="chin" onclick="chin()">9</button>
+        </th>
+        <th>
+            <button type="button" onclick="handlemul()">x</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="xoa()">C</button>
+        </th>
+        <th>
+            <button type="button" id="khong" onclick="khong()">0</button>
+        </th>
+        <th>
+            <button type="button" id="bang" onclick="ketqua1()">=</button>
+        </th>
+        <th>
+            <button type="button" onclick="handlediv()">/</button>
+        </th>
+    </tr>
+</table>
+</body>
+<script>
+    function khong()
+    {
+        document.getElementById("ketqua").value +=0
+    }
+    function mot()
+    {
+        document.getElementById("ketqua").value +=1
+    }
+    function hai()
+    {
+        document.getElementById("ketqua").value +=2
+    }
+    function ba()
+    {
+        document.getElementById("ketqua").value +=3
+    }
+    function bon()
+    {
+        document.getElementById("ketqua").value +=4
+    }
+    function nam()
+    {
+        document.getElementById("ketqua").value +=5
+    }
+    function sau()
+    {
+        document.getElementById("ketqua").value +=6
+    }
+    function bay()
+    {
+        document.getElementById("ketqua").value +=7
+    }
+    function tam()
+    {
+        document.getElementById("ketqua").value +=8
+    }
+    function chin()
+    {
+        document.getElementById("ketqua").value +=9
+    }
+    function handleadd()
+    {
+        document.getElementById("ketqua").value += "+"
+    }
+    function handlesub()
+    {
+        document.getElementById("ketqua").value += "-"
+    }
+    function handlemul()
+    {
+        document.getElementById("ketqua").value += "*"
+    }
+    function handlediv()
+    {
+        document.getElementById("ketqua").value += "/"
+    }
+    function xoa(){
+        document.getElementById("ketqua").value =""
+    }
+    function ketqua1() {
+        var p = document.getElementById("ketqua").value;
+        var q= eval(p);
+        document.getElementById("ketqua").value = q;
+    }
+</script>
+</html>
