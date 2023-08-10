@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tính cước điện thoại</title>
 </head>
 <body>
-
+<input type="number" id="input">
+<button onclick="minute()">Kiểm tra</button>
+<div id="result"></div>
+<script>
+    function minute() {
+        let input = document.getElementById("input").value;
+        if (input < 10) {
+            document.getElementById("result").innerText = "Số tiền bạn phải trả là " + input * 2000;
+        } else if (minute < 30) {
+            document.getElementById("result").innerText = "Số tiền bạn phải trả là " + input * 1500;
+        } else if (minute < 60) {
+            document.getElementById("result").innerText = "Số tiền bạn phải trả là " + input * 1000;
+        } else {
+            document.getElementById("result").innerText = "Số tiền bạn phải trả là " + input * 700;
+        }
+    }
+</script>
 </body>
 </html>
