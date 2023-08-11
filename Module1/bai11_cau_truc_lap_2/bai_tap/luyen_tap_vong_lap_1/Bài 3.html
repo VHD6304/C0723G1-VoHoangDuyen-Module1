@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hển thị 20 số Fibonacci đầu tiên</title>
+</head>
+<body>
+<script>
+   // let tb = +prompt("Nhấn 'OK' để hiển thị 20 số Fibonacci đầu tiên");
+    let a = 0;
+    let b = 1;
+    for (let i = 0; i<20; i++ ) {
+        f = a + b;
+        document.write(a + "<br>");
+        b = a;
+        a = f;
+
+    }
+</script>
+</body>
+</html>
