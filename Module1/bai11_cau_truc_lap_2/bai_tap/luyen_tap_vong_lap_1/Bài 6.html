@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>30 số đầu tiên chia hết cho 7</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập giới hạn bạn muốn tìm: ");
+        let count = 0, tong = 0;
+        let dayso ="";
+        for ( let i = 1; ; i++) {
+            if (i % 7 == 0) {
+                dayso += i+" ";
+                tong += i;
+                count++;
+                if (count == n) {
+                    break;
+                }
+            }
+        }
+        document.write(dayso +"<br>")
+        document.write("Tổng bằng " +tong)
+</script>
+</body>
+</html>

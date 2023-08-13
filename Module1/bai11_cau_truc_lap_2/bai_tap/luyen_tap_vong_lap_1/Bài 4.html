@@ -2,22 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tổng 20 số Fibonacci đầu tiên</title>
+    <title>Số đầu tiên trong dãy Fibonacci chia hết cho 5</title>
 </head>
 <body>
 <script>
-    // let tb = +prompt("Nhấn 'OK' để hiển thị 20 số Fibonacci đầu tiên");
     let a = 0;
     let b = 1;
-    let total = 0;
-    for (let i = 0; i<20; i++ ) {
+    for (let i = 0; i < 20; i++) {
         f = a + b;
-        //document.write(a + "<br>");
-         total = total + a;
-        a = b;
-        b = f;
+        document.write(a + "<br>");
+        b = a;
+        a = f;
     }
-    document.write(total);
 </script>
 </body>
 </html>
