@@ -11,27 +11,25 @@
     }
 </style>
 <form action="" method="post">
-    <label for="email"></label><h2>Order Form</h2>
-    <label for="email"></label><p>What would you like to buy?</p>
+    <h2>Order Form</h2>
+    <p>What would you like to buy?</p>
     <select style="width: 200px" name="dropdown" >
-        <option value= "A" selected>A</option>
-        <option value= "B" selected>B</option>
-        <option value= "C" selected>C</option>
-        <option value= "D" selected>D</option>
+        <option selected>A</option>
+        <option selected>B</option>
+        <option selected>C</option>
+        <option selected>D</option>
     </select>
-    <label for="email"></label><p>How many would you like to order?</p>
-    <input type="radio" name="subject" value="1 - $10">1 - $10
-    <br>
-    <input type="radio" name="subject" value="2 - $20">2 - $20
-    <br>
-    <input type="radio" name="subject" value="3 - $25">3 - $25
-    <label for="email"></label><p>Name*</p>
+    <p>How many would you like to order?</p>
+    <input type="radio" name="subject" >1 - $10 <br>
+    <input type="radio" name="subject" >2 - $20 <br>
+    <input type="radio" name="subject" >3 - $25 <br>
+    <p>Name*</p>
     <input type="text" name="first name" placeholder="FirstName"/>
     <input type="text" name="last name" placeholder="LastName"/>
-    <label for="email"></label><p>Email</p>
-    <input type="email" id="email" name="email">
-    <label for="email"></label><p>PHONE NUMBER</p>
-    <input type="number" name="phonenumber"> <br>
+    <p>Email</p>
+    <input type="email" id="email" name="email" style="width: 400px">
+    <p>Phone Number</p>
+    <input type="tel" name="phonenumber"><br>
     <input type="submit" value="Sumit">
 </form>
 </body>

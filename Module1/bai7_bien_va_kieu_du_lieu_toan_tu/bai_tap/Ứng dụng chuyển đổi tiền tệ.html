@@ -10,7 +10,7 @@
     <th>From Currency</th>
     <th>To Currency</th>
     <tr>
-        <td><input type="number" name="amount" id="Amount"></td>
+            <td><input type="number" name="amount" id="amount"></td>
         <td>
             <select id="FC" style="width: 50px" name="vnd">
                 <option value="VND">VND</option>
@@ -30,19 +30,19 @@
 <div id="result"></div>
 <script>
     function handleClick() {
-        let Result = 0;
-        let Amount = document.getElementById("Amount").value;
+        let result = 0;
+        let amount = document.getElementById("amount").value;
         let FC = document.getElementById("FC").value;
         let TC = document.getElementById("TC").value;
         if (FC == "USD" && TC == "VND") {
-            Result = Amount * 23000;
+            result = amount * 23000;
         } else if (FC == "VND" && TC == "USD") {
-            Result = Amount / 23000;
+            result = amount / 23000;
         } else
         {
-            Result = Amount;
+            result = amount;
         }
-        document.getElementById("result").innerText= "Result: "  + Result;
+        document.getElementById("result").innerText= "Result: "  + result;
     }
 </script>
 </body>

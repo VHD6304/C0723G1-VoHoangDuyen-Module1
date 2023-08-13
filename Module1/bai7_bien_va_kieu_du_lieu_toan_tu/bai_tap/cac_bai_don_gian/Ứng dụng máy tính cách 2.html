@@ -6,33 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-<input type="number" id="number1" />
-<input type="number" id="number2" />
+<input type="number" id="num1" />
+<input type="number" id="num2" />
 <button onclick="handleCong()">Cong</button>
 <button onclick="handleTru()">Tru</button>
 <button onclick="handleNhan()">Nhân</button>
 <button onclick="handleChia()">Chia</button>
-<p id="result"></p>
+<div id="result"></div>
 <script>
     function handleCong() {
-        let number1 = +document.getElementById("number1").value;
-        let number2 = +document.getElementById("number2").value;
-        document.getElementById("result").innerText = number1 + number2;
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+        document.getElementById("result").innerText = num1 + num2;
     }
     function handleTru() {
-        let number1 = +document.getElementById("number1").value;
-        let number2 = +document.getElementById("number2").value;
-        document.getElementById("result").innerText = number1 - number2;
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+        document.getElementById("result").innerText = num1 - num2;
     }
     function handleNhan() {
-        let number1 = +document.getElementById("number1").value;
-        let number2 = +document.getElementById("number2").value;
-        document.getElementById("result").innerText = number1 * number2;
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+        document.getElementById("result").innerText = num1 * num2;
     }
     function handleChia() {
-        let number1 = +document.getElementById("number1").value;
-        let number2 = +document.getElementById("number2").value;
-        document.getElementById("result").innerText = number1 / number2;
+        let num1 = +document.getElementById("num1").value;
+        let num2 = +document.getElementById("num2").value;
+        document.getElementById("result").innerText = num1 / num2;
     }
 </script>
 </body>
