@@ -7,20 +7,21 @@
 <body>
 <script>
     let n = +prompt("Nhập giới hạn bạn muốn tìm: ");
-        let count = 0, tong = 0;
-        let dayso ="";
-        for ( let i = 1; ; i++) {
-            if (i % 7 == 0) {
-                dayso += i+" ";
-                tong += i;
-                count++;
-                if (count == n) {
-                    break;
-                }
+    let count = 0;
+    let tong = 0;
+    let dayso = "";
+    for (let i = 1; ; i++) {
+        if (i % 7 == 0) {
+            dayso += i + " ";
+            tong += i;
+            count++;
+            if (count == n) {
+                break;
             }
         }
-        document.write(dayso +"<br>")
-        document.write("Tổng bằng " +tong)
+    }
+    document.write(dayso + "<br>")
+    document.write("Tổng bằng " + tong)
 </script>
 </body>
 </html>
