@@ -30,7 +30,7 @@
 <div id="result"></div>
 <script>
     function handleClick() {
-        let result;
+        let result = 0;
         let kiemtra = +document.getElementById("kiemtra").value;
         let giuaky = +document.getElementById("giuaky").value;
         let cuoiky = +document.getElementById("cuoiky").value;
@@ -38,8 +38,8 @@
         if (dtb >= 8) {
             result = "Bạn đạt học lực giỏi";
         } else if (dtb >= 7) {
-            ressult = "Bạn đạt học lực khá";
-        } else if ( dtb >= 5) {
+            result = "Bạn đạt học lực khá";
+        } else if (dtb >= 5) {
             result = "Bạn đạt học lực trung bình";
         } else {
             result = "Bạn đạt học lực yếu";
@@ -47,6 +47,5 @@
         document.getElementById("result").innerText = result;
     }
 </script>
-
 </body>
 </html>

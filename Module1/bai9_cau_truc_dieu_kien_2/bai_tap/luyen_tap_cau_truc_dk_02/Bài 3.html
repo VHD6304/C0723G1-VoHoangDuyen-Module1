@@ -7,8 +7,12 @@
 <body>
 <script>
     let a = +prompt("Nhập số đo cạnh ạ: ");
-    S = a * a;
-    alert("Diên tích vuông là: " + S);
+    let s = a * a; // Math.pow(a,2)
+    if (a > 0) {
+        alert("Diên tích vuông là: " + s);
+    } else {
+        alert("Nhập độ dài cạnh là số dương: ");
+    }
 </script>
 </body>
 </html>

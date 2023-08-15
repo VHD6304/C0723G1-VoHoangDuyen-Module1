@@ -8,7 +8,12 @@
 <script>
     let a = +prompt("Nhập chiều dài: ");
     let b = +prompt("Nhập chiều rộng: ");
-    alert("Diện tích hình chữ nhật là: " + a*b)
+    let s = a * b;
+    if (a > 0 && b > 0) {
+        alert("Diện tích hình chữ nhật là: " + s);
+    } else {
+        alert("Nhập số đo 2 cạnh là số dương: ");
+    }
 </script>
 </body>
 </html>

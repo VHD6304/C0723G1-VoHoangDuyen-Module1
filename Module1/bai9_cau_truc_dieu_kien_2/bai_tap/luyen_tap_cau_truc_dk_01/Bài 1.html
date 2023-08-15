@@ -13,17 +13,18 @@
 <!--    }-->
 <!--    else alert("a không chia hết cho b");-->
 <!--</script>-->
+
 <label for="num1">Nhập a:</label>
 <input type="number" id="num1"> <br>
 <label for="num2">Nhập b</label>
-<input  type="number" id="num2"> <br>
+<input type="number" id="num2"> <br>
 <button onclick="handleClick()">Kiểm tra</button>
 <div id="result"></div>
 <script>
     function handleClick() {
         let num1 = document.getElementById("num1").value;
         let num2 = document.getElementById("num2").value;
-        if (num1 % num2 == 0) {
+        if (num1 % num2 === 0) {
             document.getElementById("result").innerText = "Số a chia hết cho b";
         } else {
             document.getElementById("result").innerText = "Số a không chia hết cho b";

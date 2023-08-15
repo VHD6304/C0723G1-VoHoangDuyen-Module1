@@ -8,8 +8,12 @@
 <script>
     let h = +prompt("Nhập chiều cao: ");
     let a = +prompt("Nhập chiều dài cạnh dáy");
-    S = (a * h) / 2;
-    alert("Diện tích tam giác vuông là: " + S);
+    let s = (a * h) / 2;
+    if (a > 0 && h > 0) {
+        alert("Diện tích tam giác vuông là: " + s);
+    } else {
+        alert("Nhập độ dài 2 cạnh là số dương: ");
+    }
 </script>
 </body>
 </html>

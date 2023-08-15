@@ -8,7 +8,7 @@
 <h1>Tính chỉ số cân nặng</h1>
 <label for="weight">Nhập cân nặng: (kg)</label>
 <input type="text" id="weight" name="cannang"> <br>
-<label for ="height">Nhập chiều cao: (m)</label>
+<label for="height">Nhập chiều cao: (m)</label>
 <input type="text" id="height" name="chieucao"> <br>
 <button onclick="handleClick()">Kiểm tra</button>
 <div id="result"></div>
@@ -16,6 +16,7 @@
     function handleClick() {
         let weight = +document.getElementById("weight").value;
         let height = +document.getElementById("height").value;
+        let result;
         let bmi = weight / (height * height);
         if (bmi < 18) {
             result = "Gầy độ 3. Ăn thật nhiều vào nhé";
@@ -26,7 +27,7 @@
         } else {
             result = "Béo phì";
         }
-        document.getElementById("result").innerHTML = "Chỉ số BMI là: " + bmi + "<br>"+ result;
+        document.getElementById("result").innerHTML = "Chỉ số BMI là: " + bmi + "<br>" + result;
     }
 </script>
 </body>

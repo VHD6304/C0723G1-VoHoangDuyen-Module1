@@ -33,16 +33,16 @@
 <div id="result"></div>
 <script>
     function handleClick() {
-        let result;
+        let result = 0;
         let num1 = +document.getElementById("num1").value;
         let num2 = +document.getElementById("num2").value;
         let num3 = +document.getElementById("num3").value;
         if (num1 > num2 && num1 > num3) {
-                result= num1 + " " + "là số lớn nhất";
+            result = num1 + " là số lớn nhất";
         } else if (num2 > num3 && num2 > num3) {
-            result= num2 + " " + "là số lớn nhất"
+            result = num2 + " là số lớn nhất"
         } else {
-            result= num3 + " " + "là số lớn nhất";
+            result = num3 + " là số lớn nhất";
         }
         document.getElementById("result").innerText = result;
     }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="input">Nhập từ:</label>
+<input type="text" id="input">
+<button onclick="handleClick()">Dịch</button>
+<div id="result"></div>
+<script>
+    function handleClick() {
+        let eng = ["one", "two", "three", "four", "five", "six", "seven", "eight", "night", "ten"];
+        let vn = ["một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười"];
+        let result = "NOT FOUND - Không tìm thấy kêt quả";
+        let input = document.getElementById("input").value;
+        for (let i = 0; i < eng.length; i++) {
+            if (input === eng[i]) {
+                result = vn[i];
+                break;
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>

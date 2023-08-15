@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8"/>
+    <title>Ứng dụng máy tính</title>
 </head>
 <body>
-<input type="number" id="num1" />
-<input type="number" id="num2" />
+<input type="number" id="num1"/>
+<input type="number" id="num2"/>
 <button onclick="handleCong()">Cong</button>
 <button onclick="handleTru()">Tru</button>
 <button onclick="handleNhan()">Nhân</button>
@@ -19,16 +18,19 @@
         let num2 = +document.getElementById("num2").value;
         document.getElementById("result").innerText = num1 + num2;
     }
+
     function handleTru() {
         let num1 = +document.getElementById("num1").value;
         let num2 = +document.getElementById("num2").value;
         document.getElementById("result").innerText = num1 - num2;
     }
+
     function handleNhan() {
         let num1 = +document.getElementById("num1").value;
         let num2 = +document.getElementById("num2").value;
         document.getElementById("result").innerText = num1 * num2;
     }
+
     function handleChia() {
         let num1 = +document.getElementById("num1").value;
         let num2 = +document.getElementById("num2").value;

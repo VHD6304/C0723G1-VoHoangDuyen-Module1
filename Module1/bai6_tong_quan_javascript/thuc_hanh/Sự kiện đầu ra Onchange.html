@@ -7,19 +7,20 @@
 <body>
 <p>Select a new car for a list</p>
 <select id="demo"> <!-- onchange="do_something()"> -->
-  <option value="Audi">Audi</option>
-  <option value="Mercedes">Mercedes</option>
-  <option value="BMW">BWM</option>
-  <option value=Vin>Vin</option>
-  <option value=Toyota>Toyota</option>
+    <option value="Audi">Audi</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="BMW">BWM</option>
+    <option value=Vin>Vin</option>
+    <option value=Toyota>Toyota</option>
 </select>
 <script>
-  var selectedElement = document.getElementById("demo");
-  selectedElement.addEventListener("change",changeFunction);
-  function changeFunction() {
-    var test = document.getElementById("demo").value;
-    alert(test);
-  }
+    var selectedElement = document.getElementById("demo");
+    selectedElement.addEventListener("change", changeFunction);
+
+    function changeFunction() {
+        var test = document.getElementById("demo").value;
+        alert(test);
+    }
 </script>
 <!--
 <script>

@@ -12,13 +12,14 @@
 <!--    }-->
 <!--    else alert("Không đủ điều kiện học lớp 10");-->
 <!--</script>-->
+
 <label for="num">Nhập số tuổi:</label>
 <input type="number" id="num">
 <button onclick="handleClick()">Kiểm tra</button>
 <div id="result"></div>
 <script>
     function handleClick() {
-        let num1 = document.getElementById("num").value;
+        let num = document.getElementById("num").value;
         if (num >= 15) {
             document.getElementById("result").innerText = "Đủ điều kiện để học lớp 10";
         } else {

@@ -10,7 +10,7 @@
     <th>From Currency</th>
     <th>To Currency</th>
     <tr>
-            <td><input type="number" name="amount" id="amount"></td>
+        <td><input type="number" name="amount" id="amount"></td>
         <td>
             <select id="FC" style="width: 50px" name="vnd">
                 <option value="VND">VND</option>
@@ -23,7 +23,9 @@
                 <option value="USD">USD</option>
             </select>
         </td>
-        <td><button onclick="handleClick()">Convert</button></td>
+        <td>
+            <button onclick="handleClick()">Convert</button>
+        </td>
     </tr>
 </table>
 <br>
@@ -38,11 +40,10 @@
             result = amount * 23000;
         } else if (FC == "VND" && TC == "USD") {
             result = amount / 23000;
-        } else
-        {
+        } else {
             result = amount;
         }
-        document.getElementById("result").innerText= "Result: "  + result;
+        document.getElementById("result").innerText = "Result: " + result;
     }
 </script>
 </body>

@@ -5,41 +5,40 @@
     <title>Ứng dụng máy tính</title>
 </head>
 <body>
-            <input type="number" id="num1" name="num1">
-            <input type="number" id="num2" name="num2">
-            <button onclick="handleadd()">Addition(+)</button>
-            <button onclick="handlesub()">Subtraction(-)</button>
-            <button onclick="handlemul()">Multiplication(X)</button>
-            <button onclick="handlediv()">Division(/)</button>
+<input type="number" id="num1" name="num1">
+<input type="number" id="num2" name="num2">
+<button onclick="handleadd()">Addition(+)</button>
+<button onclick="handlesub()">Subtraction(-)</button>
+<button onclick="handlemul()">Multiplication(X)</button>
+<button onclick="handlediv()">Division(/)</button>
 <div id="result"></div>
 <script>
-    function handleadd()
-    {
+    function handleadd() {
         let num1 = +document.getElementById("num1").value;
         let num2 = +document.getElementById("num2").value;
         let result = num1 + num2;
-        document.getElementById("result").innerHTML="Result " +result;
+        document.getElementById("result").innerHTML = "Result " + result;
     }
-    function handlesub()
-    {
+
+    function handlesub() {
         let num1 = +document.getElementById("num1").value;
         let num2 = +document.getElementById("num2").value;
         let result = num1 - num2;
-        document.getElementById("result").innerHTML="Result " +result;
+        document.getElementById("result").innerHTML = "Result " + result;
     }
-    function handlemul()
-    {
+
+    function handlemul() {
         let num1 = +document.getElementById("num1").value;
-        let num2 =  +document.getElementById("num2").value;
+        let num2 = +document.getElementById("num2").value;
         let result = num1 * num2;
-        document.getElementById("result").innerHTML="Result " +result;
+        document.getElementById("result").innerHTML = "Result " + result;
     }
-    function handlediv()
-    {
+
+    function handlediv() {
         let num1 = +document.getElementById("num1").value;
         let num2 = +document.getElementById("num2").value;
         let result = num1 / num2;
-        document.getElementById("result").innerHTML="Result " +result;
+        document.getElementById("result").innerHTML = "Result " + result;
     }
 </script>
 </body>

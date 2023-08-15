@@ -10,9 +10,9 @@
     let month = +prompt("Nhập kỳ hạn gửi: ");
     let rate = +prompt("Nhập lãi suất gửi: ");
     let result;
-    if (money > 0 && month > 0 && rate >0) {
-        result = money * ((rate/100)/12) * month;
-        document.write("Tổng số tiền nhận được khi đến hạn: " + (result+money));
+    if (money > 0 && month > 0 && rate > 0) {
+        result = money * ((rate / 100) / 12) * month;
+        document.write("Tổng số tiền nhận được khi đến hạn: " + (result + money));
     } else {
         document.write("Vui lòng nhập lại");
     }
