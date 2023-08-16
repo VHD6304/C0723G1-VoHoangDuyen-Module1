@@ -7,7 +7,6 @@
 <body>
 <script>
     let n;
-    //let arr = [];
     let arr = new Array(n);
     do {
         n = +prompt("Nhập số lượng phần tử: ");
@@ -21,8 +20,7 @@
         arr[i] = +prompt("Nhập phần tử thứ " + i);
     }
     document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
-
-        if (arr[i] === "-"){
+        if (arr[i] === "-") {
             arr[i] = "_"
         }
     document.write("Mảng sau khi đã sửa đổi: " + arr);

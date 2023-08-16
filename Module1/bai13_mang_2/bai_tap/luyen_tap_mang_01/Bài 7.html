@@ -6,22 +6,33 @@
 </head>
 <body>
 <script>
-    let arr = [1, 4, 5, 5, 6, 7, 8, 9];
-    let inputV = +prompt("input number V");
-    let indexV = -1;
-    for (let i = 0; i < arr.length; i++) {
-        if (inputV === arr[i]) {
-            indexV = i;
+    let n;
+    //let arr = [];
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhập số lượng phần tử: ");
+        if (isNaN(n) === false) {
             break;
+        } else {
+            alert("Nhập lại: ");
+        }
+    } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + i);
+    }
+    document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
+
+    let numberClear = +prompt("Nhập vào số nguyên V cần xoá: ");
+    for (let j = 0; j < arr.length; j++) {
+        if (numberClear === arr[j]) {
+            for (let v = j; v < arr.length; v++) {
+                arr[v] = arr[v + 1];
+            }
+            arr[arr.length - 1] = 0;
+            j--;
         }
     }
-    if (indexV!==-1){
-        for (let i = indexV; i < arr.length -1 ; i++) {
-            arr[i] = arr[(i+1)];
-        }
-        arr[arr.length-1] = 0;
-    }
-    document.write(arr);
+    document.write("Mảng sau khi xoá là: " + arr);
 </script>
 </body>
 </html>
