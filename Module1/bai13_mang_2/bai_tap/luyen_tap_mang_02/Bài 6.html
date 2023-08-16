@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n;
+    //let arr = [];
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhập số lượng phần tử: ");
+        if (isNaN(n) === false) {
+            break;
+        } else {
+            alert("Nhập lại: ");
+        }
+    } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + i);
+    }
+    document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
+
+        if (arr[i] === "-"){
+            arr[i] = "_"
+        }
+    document.write("Mảng sau khi đã sửa đổi: " + arr);
+</script>
+</body>
+</html>

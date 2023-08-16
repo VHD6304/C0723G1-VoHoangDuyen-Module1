@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị phần tử giá trị lớn nhất và vị trí của phần tử đó</title>
+</head>
+<body>
+<script>
+    //   let arr_n = [120, 120, 5, 8, 16, 4, 7, 3, 1, 9, 7];
+
+    // let n = +prompt("Nhập số lượng phần tử: ");
+    // let arr = []
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = +prompt("Nhập phần tử thứ " + i)
+    // }
+    let n;
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhập sô phần tử trong mảng: ");
+        if (isNaN(n) === false) {
+            break;
+        } else {
+            alert("Nhập lại: ");
+        }
+    } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + i);
+    }
+    document.write("Mảng bạn vừa nhập là " + "[" + arr + "]" + "<br>")
+    let max = arr[0];
+    let index = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (max <= arr[i]) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    document.write("Phần tử lớn nhất trong mảng là " + max + " tại vị trí mảng số " + index);
+</script>
+</body>
+</html>

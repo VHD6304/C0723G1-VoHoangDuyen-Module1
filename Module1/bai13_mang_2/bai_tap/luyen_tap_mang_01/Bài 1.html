@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên lớn hơn 10</title>
+</head>
+<body>
+<script>
+    // let arr_n = [2, 4, 15, 5, 25, 50, 9, 3, 22, 55, 20];
+
+    // let n = +prompt("Nhập số lượng phần tử: ");
+    // let arr = [];
+
+    let n;
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhập phần tử trong mảng: ");
+        if (isNaN(n) === false) {
+            break;
+        } else {
+            alert("Nhập lại");
+        }
+    } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ: " + i);
+    }
+    document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
+    for (let i = 0; i <= arr.length; i++) {
+        if (arr[i] >= 10) {
+            document.write(arr[i] + "<br>");
+        }
+    }
+</script>
+</body>
+</html>

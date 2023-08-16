@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị giá trị lớn nhất và in trung bình cộng của mảng</title>
+</head>
+<body>
+<script>
+    // let n = +prompt("Nhập số lượng phần tử: ");
+    // let arr = [];
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = +prompt("Nhập phần tử thứ " +i);
+    // }
+
+    let n;
+    //let arr = [];
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhập số lượng phần tử: ");
+        if (isNaN(n) === false) {
+            break;
+        } else {
+            alert("Nhập lại: ");
+        }
+    } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ" + i);
+    }
+    console.log(arr);
+    let max = arr[0];
+    let result = 0;
+    let tb = 0;
+    for (let i = 0; i < arr.length; i++) {
+        result += arr[i];
+        if (max <= arr[i]) {
+            max = arr[i];
+        }
+    }
+    tb = result / arr.length;
+    document.write("Phần tử lớn nhất trong mảng là " + max + "<br>");
+    document.write("Trung bình " + tb);
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập số nguyên rồi đảo ngược</title>
+</head>
+<body>
+<script>
+    let n;
+    //let arr = [];
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhập số lượng phần tử: ");
+        if (isNaN(n) === false) {
+            break;
+        } else {
+            alert("Nhập lại: ");
+        }
+    } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + i);
+    }
+    document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
+    // let result = 0;
+    // arr.reverse();
+    let first = 0;
+    let last = arr.length - 1;
+    while (first < last) {
+        let n = arr[first];
+        arr[first] = arr[last];
+        arr[last] = n;
+        first++;
+        last--;
+    }
+    document.write("Mảng đảo người là" + "[" + arr + "]");
+    console.log(arr);
+</script>
+</body>
+</html>

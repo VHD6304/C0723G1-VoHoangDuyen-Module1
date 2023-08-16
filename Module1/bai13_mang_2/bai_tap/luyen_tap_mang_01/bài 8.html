@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng theo thứ tự giảm dần</title>
+</head>
+<body>
+<script>
+    let n;
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhập số phần từ trong mảng: ");
+        if (isNaN(n) === false) {
+            break;
+        } else {
+            alert("Nhập lại ");
+        }
+    } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + i);
+    }
+    document.write("Mảng đã nhập là " + "[" + arr + "]");
+    let a;
+    for (let b = j + 1; b < arr.length; b++) {
+        if (arr[a] > arr[j]) {
+            a = arr[j];
+            arr[j] = arr[y];
+            arr[a] = b;
+        }
+    }
+    document.write("Mảng sau khi được sắp xếp [" + arr + "]")
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>
