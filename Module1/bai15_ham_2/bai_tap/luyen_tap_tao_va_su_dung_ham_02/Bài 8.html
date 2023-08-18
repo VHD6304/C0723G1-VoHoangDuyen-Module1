@@ -6,27 +6,30 @@
 </head>
 <body>
 <script>
+
     let n;
     let arr = new Array(n);
-    do {
-        n = +prompt("Nhập số lượng phần tử: ");
-        if (isNaN(n) === false) {
-            break;
-        } else {
-            alert("Nhập lại: ");
-        }
-    } while (true)
-    for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("Nhập phần tử thứ " + i);
-    }
-    document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
+
     function daoNguoc(arr) {
+        do {
+            n = +prompt("Nhập số lượng phần tử: ");
+            if (isNaN(n) === false) {
+                break;
+            } else {
+                alert("Nhập lại: ");
+            }
+        } while (true)
+        for (let i = 0; i < n; i++) {
+            arr[i] = +prompt("Nhập phần tử thứ " + i);
+        }
+        document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
         for (let i = 0; i < arr.length / 2; i++) {
             let temp = arr[i];
             arr[i] = arr[arr.length - 1 - i];
             arr[arr.length - 1 - i] = temp;
         }
     }
+
     daoNguoc(arr)
     document.write("Mảng sau khi đảo ngược là: " + arr)
 </script>

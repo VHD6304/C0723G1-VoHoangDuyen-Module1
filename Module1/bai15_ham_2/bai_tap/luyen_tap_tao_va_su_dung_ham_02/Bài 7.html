@@ -6,17 +6,19 @@
 </head>
 <body>
 <script>
-   let a = +prompt("Nhập số thứ nhất: ");
-   let b = +prompt("Nhập số thứ hai: ");
-   document.write("Số đã nhập ban đầu là: " + "a = " + a + " " + "b = " + b + "<br>");
+    let a = +prompt("Nhập số thứ nhất: ");
+    let b = +prompt("Nhập số thứ hai: ");
+    document.write("Số đã nhập ban đầu là: " + "a = " + a + " " + "b = " + b + "<br>");
+
     function swap(a, b) {
-        let c;
-        c = a;
+        let temp;
+        temp = a;
         a = b;
-        b = c;
-        return document.write("Số sau khi đổi là: " + "a = " + a + " " + "b = " + b)
+        b = temp;
+        document.write("Số sau khi đổi là: " + "a = " + a + " " + "b = " + b)
     }
-    swap(a,b)
+
+    swap(a, b)
 </script>
 </body>
 </html>

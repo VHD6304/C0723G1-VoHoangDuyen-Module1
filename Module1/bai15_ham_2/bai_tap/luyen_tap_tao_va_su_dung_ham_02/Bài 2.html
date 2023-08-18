@@ -6,19 +6,19 @@
 </head>
 <body>
 <script>
-    let n = +prompt("Nhập bán kính hình tròn: ");
+    let r = +prompt("Nhập bán kính hình tròn: ");
     function dienTichHinhTron(n) {
-        result1 = (n * n) * 3.14;
-        return result1;
+        let result = (r * r) * 3.14;
+        return result;
     }
     function chuViHinhTron(n) {
-       result2 = n * 2 * 3.14;
-        return result2 ;
+       let result = r * 2 * 3.14;
+        return result ;
     }
     chuViHinhTron();
     dienTichHinhTron();
-    document.write("Chu vi của hình tròn là: " + chuViHinhTron(n) + "<br>")
-    document.write("Diện tích của hình tròn là: " + dienTichHinhTron(n))
+    document.write("Chu vi của hình tròn là: " + chuViHinhTron(r) + "<br>")
+    document.write("Diện tích của hình tròn là: " + dienTichHinhTron(r))
 
 </script>
 </body>

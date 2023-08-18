@@ -7,24 +7,24 @@
 <body>
 <script>
     let n;
-    function find(n) {
     let arr = new Array(n);
-    do {
-        n = +prompt("Nhập số phần từ trong mảng: ");
-        if (isNaN(n) === false) {
-            break;
-        } else {
-            alert("Nhập lại ");
+
+    function find(n) {
+        do {
+            n = +prompt("Nhập số phần từ trong mảng: ");
+            if (isNaN(n) === false) {
+                break;
+            } else {
+                alert("Nhập lại ");
+            }
+        } while (true)
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = prompt("Nhập phần tử thứ " + i);
         }
-    } while (true)
+        document.write("Mảng đã nhập là " + "[" + arr + "]");
 
-    for (let i = 0; i < n; i++) {
-        arr[i] = prompt("Nhập phần tử thứ " + i);
-    }
-    document.write("Mảng đã nhập là " + "[" + arr + "]");
-
-    let input = prompt("Nhập phần tử cần tìm: ");
-
+        let input = prompt("Nhập phần tử cần tìm: ");
         let count = 0;
         for (let i = 0; i < arr.length; i++) {
             if (input === arr[i]) {
@@ -34,9 +34,10 @@
         if (count >= 1) {
             document.write("Số lần xuất hiện" + count);
         } else {
-            document.write("-1" );
+            document.write("-1");
         }
     }
+
     find()
 </script>
 </body>

@@ -7,11 +7,11 @@
 <body>
 <script>
     let starName = prompt("Nhập vào tên của chòm sao:")
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
     function findStar(starName) {
-        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
-        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
         for (let i = 0; i < arr1.length; i++) {
-            if (arr1[i] === starName) {
+            if (starName === arr1[i]) {
                 alert(arr2[i])
                 return;
             }

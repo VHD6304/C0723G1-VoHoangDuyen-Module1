@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kiểm tra ký tự hoặc số</title>
 </head>
 <body>
 <script>
     let n = +prompt("Nhập vào ký tự bất kỳ: ");
-    function kiemTra (n) {
 
-        if ( isNaN(n) === false ) {
+    function kiemTra(n) {
+// Cách 1
+        //     if (isNaN(n) === false) {
+        //         alert("True")
+        //     } else {
+        //         alert("False")
+        //     }
+        // }
+        //
+        // kiemTra(n)
+
+        if (n % 1 === 0) {
             alert("True")
         } else {
             alert("False")
         }
     }
-    kiemTra(n)
 
+    kiemTra(n)
 </script>
 </body>
 </html>
