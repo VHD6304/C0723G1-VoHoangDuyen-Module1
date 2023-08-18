@@ -28,17 +28,17 @@
 
     function footToMeter() {
         result = amount * 0.305
-        document.getElementById('result').innerHTML = amount + ' feet = ' + result + ' meter';
+        document.getElementById("result").innerHTML = amount + " feet = " + result + " meter";
     }
 
     function meterToFoot() {
         result = amount * 3.297
-        document.getElementById('result').innerHTML = amount + ' meter = ' + result + ' feet';
+        document.getElementById("result").innerHTML = amount + " meter = " + result + " feet";
     }
 
     function handleClick() {
-        amount = +document.getElementById('amount').value;
-        select = document.getElementById('select').value;
+        amount = +document.getElementById("amount").value;
+        select = document.getElementById("select").value;
         if (select === "Meter") {
             meterToFoot()
         } else {

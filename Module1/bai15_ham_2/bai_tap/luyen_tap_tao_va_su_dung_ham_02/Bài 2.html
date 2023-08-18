@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích và chu vi hình tròn</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập bán kính hình tròn: ");
+    function dienTichHinhTron(n) {
+        result1 = (n * n) * 3.14;
+        return result1;
+    }
+    function chuViHinhTron(n) {
+       result2 = n * 2 * 3.14;
+        return result2 ;
+    }
+    chuViHinhTron();
+    dienTichHinhTron();
+    document.write("Chu vi của hình tròn là: " + chuViHinhTron(n) + "<br>")
+    document.write("Diện tích của hình tròn là: " + dienTichHinhTron(n))
+
+</script>
+</body>
+</html>

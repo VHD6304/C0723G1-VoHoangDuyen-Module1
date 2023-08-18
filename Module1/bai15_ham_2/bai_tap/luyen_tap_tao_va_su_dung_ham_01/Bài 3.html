@@ -6,14 +6,17 @@
 </head>
 <body>
 <script>
-    let a = +prompt("Nhập số thứ nhất: ");
-    let b = +prompt("Nhập số thứ hai: ");
-    function ketqua() {
-        if ( a > b)
+    let num1 = +prompt("Nhập số thứ nhất: ");
+    let num2 = +prompt("Nhập số thứ hai: ");
+    function amount() {
+        if (num1 > num2) {
             alert("Só thứ nhất lớn hơn số thứ hai");
-    } if ( a < b)
-        result = a + b;
-    alert(ketqua)
+        } else {
+            sum = num1 + num2
+        }
+    }
+    amount()
+    alert(sum);
 </script>
 </body>
 </html>

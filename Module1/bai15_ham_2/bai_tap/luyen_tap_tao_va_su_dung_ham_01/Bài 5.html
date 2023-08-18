@@ -8,17 +8,16 @@
 <script>
     let starName = prompt("Hãy nhập vào tên của chòm sao:")
     checkStar(starName);
-
     function checkStar(name) {
-        let arr1 = ['Polaris ', 'Aldebaran', 'Deneb ', 'Vega ', 'Altair', 'Dubhe ', 'Regulus']
-        let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
         for (let i = 0; i < arr1.length; i++) {
             if (arr1[i] === name) {
                 alert(arr2[i])
                 return;
             }
         }
-        alert('Không tìm thấy kết quả')
+        alert("Không tìm thấy kết quả")
     }
 </script>
 </body>

@@ -7,32 +7,35 @@
 <body>
 <script>
     let n;
-    //let arr = [];
     let arr = new Array(n);
     do {
-        n = +prompt("Nhập số lượng phần tử: ");
-        if (isNaN(n) === false) {
+        let num = +prompt("Nhập số cần kiểm tra: ");
+        if (!isNaN(num)) {
+            isPrime(num);
             break;
         } else {
-            alert("Nhập lại: ");
+            alert("Nhập lại");
         }
     } while (true)
-    for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("Nhập phần tử thứ " + i);
-    }
-    document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
 
-    let numberClear = +prompt("Nhập vào số nguyên V cần xoá: ");
-    for (let j = 0; j < arr.length; j++) {
-        if (numberClear === arr[j]) {
-            for (let v = j; v < arr.length; v++) {
-                arr[v] = arr[v + 1];
+    function isPrime(number) {
+        let count = 0;
+        if (number < 2) {
+            document.write(number + " không phải là số nguyên tố");
+        } else {
+            for (let i = 2; i < number - 1; i++) {
+                if (number % i === 0) {
+                    count++;
+                }
             }
-            arr[arr.length - 1] = 0;
-            j--;
+            if (count === 0) {
+                document.write(number + " là số nguyên tố");
+            } else {
+                document.write(number + " không phải là số nguyên tố");
+            }
         }
     }
-    document.write("Mảng sau khi xoá là: " + arr);
+
 </script>
 </body>
 </html>

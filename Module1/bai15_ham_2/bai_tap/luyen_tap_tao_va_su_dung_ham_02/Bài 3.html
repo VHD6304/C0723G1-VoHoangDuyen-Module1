@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số nguyên bất kỳ: ");
+    function giaiThua(n) {
+        let gt = 1;
+        for (let i = 1; i <= n; i++) {
+           gt = gt * i;
+        }
+        return gt;
+    }
+    giaiThua(n);
+    document.write(n + "! = " + giaiThua(n))
+</script>
+</body>
+</html>

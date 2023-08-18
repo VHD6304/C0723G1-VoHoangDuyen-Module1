@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let a = +prompt("Nhập số thứ nhất: ");
+   let b = +prompt("Nhập số thứ hai: ");
+   document.write("Số đã nhập ban đầu là: " + "a = " + a + " " + "b = " + b + "<br>");
+    function swap(a, b) {
+        let c;
+        c = a;
+        a = b;
+        b = c;
+        return document.write("Số sau khi đổi là: " + "a = " + a + " " + "b = " + b)
+    }
+    swap(a,b)
+</script>
+</body>
+</html>
