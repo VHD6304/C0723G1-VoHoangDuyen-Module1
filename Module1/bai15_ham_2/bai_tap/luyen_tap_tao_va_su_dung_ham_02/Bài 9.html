@@ -22,17 +22,18 @@
         for (let i = 0; i < n; i++) {
             arr[i] = prompt("Nhập phần tử thứ " + i);
         }
-        document.write("Mảng đã nhập là " + "[" + arr + "]");
+        document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
 
         let input = prompt("Nhập phần tử cần tìm: ");
+        document.write("Phần tử cần tìm là: " + input);
         let count = 0;
         for (let i = 0; i < arr.length; i++) {
             if (input === arr[i]) {
                 count++;
             }
         }
-        if (count >= 1) {
-            document.write("Số lần xuất hiện" + count);
+        if (count > 0) {
+            document.write("<br>" + "Số lần xuất hiện: " + count);
         } else {
             document.write("-1");
         }

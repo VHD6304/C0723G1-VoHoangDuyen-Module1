@@ -12,7 +12,7 @@
     //     arr[i] = +prompt("Nhập phần tử thứ " +i);
     // }
 
-    let n;
+    let n = 0;
     //let arr = [];
     let arr = new Array(n);
     do {
@@ -20,25 +20,24 @@
         if (isNaN(n) === false) {
             break;
         } else {
-            alert("Nhập lại: ");
+            alert("Nhập lại:");
         }
     } while (true)
     for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("Nhập phần tử thứ" + i);
+        arr[i] = +prompt("Nhập phần tử thứ: " + i);
     }
-    console.log(arr);
     let max = arr[0];
     let result = 0;
     let tb = 0;
     for (let i = 0; i < arr.length; i++) {
         result += arr[i];
-        if (max <= arr[i]) {
+        if (arr[i] > max) {
             max = arr[i];
         }
     }
     tb = result / arr.length;
     document.write("Phần tử lớn nhất trong mảng là " + max + "<br>");
-    document.write("Trung bình " + tb);
+    document.write("Giá trị trung bình các phần tử trong mảng là: " + tb);
 </script>
 </body>
 </html>

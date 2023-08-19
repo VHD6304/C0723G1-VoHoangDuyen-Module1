@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let n;
+    let n = 0;
     //let arr = [];
     let arr = new Array(n);
     do {
@@ -14,11 +14,11 @@
         if (isNaN(n) === false) {
             break;
         } else {
-            alert("Nhập lại: ");
+            alert("Nhập lại:");
         }
     } while (true)
     for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("Nhập phần tử thứ " + i);
+        arr[i] = +prompt("Nhập phần tử thứ: " + i);
     }
     document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
     // let result = 0;
@@ -32,8 +32,7 @@
         first++;
         last--;
     }
-    document.write("Mảng đảo người là" + "[" + arr + "]");
-    console.log(arr);
+    document.write("Mảng sau khi đảo ngược là" + " [" + arr + "]");
 </script>
 </body>
 </html>

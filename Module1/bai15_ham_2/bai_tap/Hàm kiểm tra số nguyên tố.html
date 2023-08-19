@@ -6,32 +6,33 @@
 </head>
 <body>
 <script>
-    let num = +prompt("Nhập số cần kiểm tra: ");
+    let n = +prompt("Nhập số cần kiểm tra: ");
     do {
-        if (!isNaN(num)) {
-            isPrime(num);
+        if (!isNaN(n)) {
+            isPrime(n);
             break;
         } else {
             alert("Nhập lại");
         }
-    }while (true)
-            function isPrime(number) {
-                let count = 0;
-                if (number < 2) {
-                    document.write(number + " không phải là số nguyên tố");
-                } else {
-                    for (let i = 2; i < number - 1; i++) {
-                        if (number % i === 0) {
-                            count++;
-                        }
-                    }
-                    if (count === 0) {
-                        document.write(number + " là số nguyên tố");
-                    } else {
-                        document.write(number + " không phải là số nguyên tố");
-                    }
+    } while (true)
+
+    function isPrime(n) {
+        let count = 0;
+        if (n < 2) {
+            document.write(n + " không phải là số nguyên tố");
+        } else {
+            for (let i = 2; i < n - 1; i++) {
+                if (n % i === 0) {
+                    count++;
                 }
             }
+            if (count === 0) {
+                document.write(n + " là số nguyên tố");
+            } else {
+                document.write(n + " không phải là số nguyên tố");
+            }
+        }
+    }
 </script>
 </body>
 </html>

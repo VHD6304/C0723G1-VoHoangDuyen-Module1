@@ -6,36 +6,32 @@
 </head>
 <body>
 <script>
-    let n;
+    let n = 0;
     let arr = new Array(n);
     do {
-        let num = +prompt("Nhập số cần kiểm tra: ");
-        if (!isNaN(num)) {
-            isPrime(num);
+        n = +prompt("Nhập số lượng phần từ trong mảng: ");
+        if (isNaN(n) === false) {
             break;
         } else {
             alert("Nhập lại");
         }
     } while (true)
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ: [" + i + "]")
+    }
+    document.write("Mảng đã nhập là [" + arr + "]" + "<br>");
 
-    function isPrime(number) {
-        let count = 0;
-        if (number < 2) {
-            document.write(number + " không phải là số nguyên tố");
-        } else {
-            for (let i = 2; i < number - 1; i++) {
-                if (number % i === 0) {
-                    count++;
-                }
+    let V = +prompt("Nhập số V cần tìm: ");
+    for (let i = 0; i < arr.length; i++) {
+        if (V === arr[i]) {
+            for (let j = i; j < n; j++) {
+                arr[j] = arr[j + 1];
             }
-            if (count === 0) {
-                document.write(number + " là số nguyên tố");
-            } else {
-                document.write(number + " không phải là số nguyên tố");
-            }
+            arr[arr.length - 1] = 0;
+            i--;
         }
     }
-
+    document.write("Mảng sau khi thay đổi là [" + arr + "]" + "<br>")
 </script>
 </body>
 </html>

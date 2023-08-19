@@ -9,14 +9,14 @@
     //   let arr_n = [120, 120, 5, 8, 16, 4, 7, 3, 1, 9, 7];
 
     // let n = +prompt("Nhập số lượng phần tử: ");
-    // let arr = []
+    // let arr = [n]
     // for (let i = 0; i < n; i++) {
     //     arr[i] = +prompt("Nhập phần tử thứ " + i)
     // }
     let n;
     let arr = new Array(n);
     do {
-        n = +prompt("Nhập sô phần tử trong mảng: ");
+        n = +prompt("Nhập số lượng phần tử trong mảng: ");
         if (isNaN(n) === false) {
             break;
         } else {
@@ -35,7 +35,7 @@
             index = i;
         }
     }
-    document.write("Phần tử lớn nhất trong mảng là " + max + " tại vị trí mảng số " + index);
+    document.write("Phần tử lớn nhất trong mảng là " + max + " tại vị trí phần tử số " + index);
 </script>
 </body>
 </html>

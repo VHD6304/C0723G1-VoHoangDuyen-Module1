@@ -6,18 +6,18 @@
 </head>
 <body>
 <script>
-    let n;
+    let n = 0;
     let arr = new Array(n);
     do {
-        n = +prompt("Nhập số phần từ trong mảng: ");
+        n = +prompt("Nhập số lượng phần từ trong mảng: ");
         if (isNaN(n) === false) {
             break;
         } else {
-            alert("Nhập lại ");
+            alert("Nhập lại");
         }
     } while (true)
     for (let i = 0; i < n; i++) {
-        arr[i] = +prompt("Nhập phần tử thứ " + i);
+        arr[i] = +prompt("Nhập phần tử thứ: " + i);
     }
     document.write("Mảng đã nhập là " + "[" + arr + "]");
 
@@ -29,9 +29,9 @@
         }
     }
     if (count >= 1) {
-        document.write("V is in the array");
+        document.write(" V is in the array");
     } else {
-        document.write("V is not in the array");
+        document.write(" V is not in the array");
     }
 </script>
 </body>

@@ -6,22 +6,18 @@
 </head>
 <body>
 <script>
-    let n = +prompt('Nhập số lượng phần tử mảng muốn tạo')
-    let arr = new Array(n);
-    for (n = 0; n < arr.length; n++) {
-        arr[n] = prompt('Nhập giá trị phần tử [' + n + ']:')
-    }
-    document.write("Mảng đã nhập là [" + arr + "]" + "<br>");
-    let first = 0
-    let last = arr.length - 1
-    while (first < last) {
-        let a = arr[first];
-        arr[first] = arr[last];
-        arr[last] = a;
-        first++;
-        last--;
-    }
-    document.write('Mảng sau khi đảo ngược là [' + arr + ']')
+    let n;
+    arr = new Array(n);
+    do {
+        n = +prompt("Nhập phần tử vào mảng");
+        if (isNaN(n) === false) {
+            break;
+        } else {
+            alert("Nhập lại")
+        }
+    } while (true)
+    for (n= 0; n< arr.length; n++)
+        arr[n] = +prompt("Nhập phần tử thứ" +n)
 </script>
 </body>
 </html>
