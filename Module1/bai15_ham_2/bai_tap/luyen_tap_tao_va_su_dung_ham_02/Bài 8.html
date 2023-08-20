@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    let n;
+    let n = 0;
     let arr = new Array(n);
 
     function daoNguoc(arr) {
@@ -15,11 +15,11 @@
             if (isNaN(n) === false) {
                 break;
             } else {
-                alert("Nhập lại: ");
+                alert("Nhập lại");
             }
         } while (true)
         for (let i = 0; i < n; i++) {
-            arr[i] = +prompt("Nhập phần tử thứ " + i);
+            arr[i] = +prompt("Nhập phần tử thứ: " + i);
         }
         document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
         for (let i = 0; i < arr.length / 2; i++) {

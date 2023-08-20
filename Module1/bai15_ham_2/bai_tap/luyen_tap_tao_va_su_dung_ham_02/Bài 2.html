@@ -7,16 +7,14 @@
 <body>
 <script>
     let r = +prompt("Nhập bán kính hình tròn: ");
-    function dienTichHinhTron(n) {
+    function dienTichHinhTron(r) {
         let result = (r * r) * 3.14;
         return result;
     }
-    function chuViHinhTron(n) {
+    function chuViHinhTron(r) {
        let result = r * 2 * 3.14;
         return result ;
     }
-    chuViHinhTron();
-    dienTichHinhTron();
     document.write("Chu vi của hình tròn là: " + chuViHinhTron(r) + "<br>")
     document.write("Diện tích của hình tròn là: " + dienTichHinhTron(r))
 

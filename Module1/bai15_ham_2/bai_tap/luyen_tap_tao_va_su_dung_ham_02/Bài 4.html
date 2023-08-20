@@ -8,16 +8,15 @@
 <script>
     let n = +prompt("Nhập vào ký tự bất kỳ: ");
 
-    function kiemTra(n) {
-// Cách 1
-        //     if (isNaN(n) === false) {
-        //         alert("True")
-        //     } else {
-        //         alert("False")
-        //     }
-        // }
-        //
-        // kiemTra(n)
+    function checkNumber(n) {
+//Cách 1
+//         if (!isNaN(n)) {
+//             return true;
+//         }
+//         return false;
+//     }
+//
+//     document.write(checkNumber(n));
 
         if (n % 1 === 0) {
             alert("True")
@@ -26,7 +25,7 @@
         }
     }
 
-    kiemTra(n)
+    checkNumber(n);
 </script>
 </body>
 </html>

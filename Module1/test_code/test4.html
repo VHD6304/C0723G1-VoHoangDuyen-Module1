@@ -6,33 +6,18 @@
 </head>
 <body>
 <script>
-    let n1 = +prompt("Nhập số lượng phần tử: ");
-    let arr1 = new Array(n1);
-    for (let i = 0; i < n1; i++) {
-        arr1[i] = +prompt("Nhập phần tử thứ "  + i);
-    }
-    document.write("Phần tử mảng 1 đã nhập là: " + arr1);
-
-    let n2 = +prompt("Nhập số lượng phần tử: ");
-    let arr2 = new Array(n2);
-    for (let i = 0; i < n2; i++) {
-        arr2[i] = +prompt("Nhập phần tử thứ "  + i);
-    }
-    document.write("Phần tử mảng 2 đã nhập là: " + arr2);
-
-    let result;
-    if (arr1.length === arr2.length) {
-        result = "2 chuỗi này giống nhau"
-        for (let i = 0; i < arr1.length; i++) {
-            if (arr1[i] !== arr2[i]) {
-                result = "2 chuỗi này khác nhau";
-                break;
-            }
+    let arr = [
+        [1, 2, 3, 7],
+        [4, 5, 6, 7],
+        [7, 8, 9, 7],
+        [7, 8, 9, 7],
+    ];
+    for (let i = 0; i < arr.length; i++) {
+        document.write("row" + i + "<br>");
+        for (let j = 0; j < arr[i].length; j++) {
+            document.write(" " + arr[i][j] + "<br>");
         }
-    } else {
-        result = "2 chuỗi này khác nhau";
     }
-    document.write(result);
 </script>
 </body>
 </html>
