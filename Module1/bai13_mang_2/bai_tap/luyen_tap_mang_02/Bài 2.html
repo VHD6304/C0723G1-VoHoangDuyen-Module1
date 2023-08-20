@@ -11,9 +11,9 @@
     let first = 0
     let last = arr.length - 1
     while (first < last) {
-        let a = arr[first];
+        let temp = arr[first];
         arr[first] = arr[last];
-        arr[last] = a;
+        arr[last] = temp;
         first++;
         last--;
     }

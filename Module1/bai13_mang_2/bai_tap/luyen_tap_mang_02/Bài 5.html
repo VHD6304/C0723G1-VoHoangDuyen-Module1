@@ -12,23 +12,25 @@
         arr1[i] = +prompt('Nhập giá trị phần tử của chuỗi 1: [' + i + ']');
     }
     document.write("Chuỗi 1 là [" + arr1 + "]" + "<br>")
+
     let n2 = +prompt("Nhập số lượng phần tử chuỗi 2");
     let arr2 = new Array(n2)
     for (let i = 0; i < n2; i++) {
         arr2[i] = +prompt('Nhập giá trị phần tử của chuỗi 2: [' + i + ']');
     }
     document.write("Chuỗi 2 là [" + arr2 + "]" + "<br>")
+
     let result;
-    if (n1 === n2) {
-        result = " Hai chuỗi giống nhau"
-        for (let i = 0; i < n1; i++) {
+    if (arr1.length === arr2.length) {
+        result = " Hai chuỗi giống nhau";
+        for (let i = 0; i < arr1.length; i++) {
             if (arr1[i] !== arr2[i]) {
                 result = "Hai chuỗi khác nhau";
                 break;
             }
         }
     } else {
-        result = "Hai chuỗi giống nhau"
+        result = "Hai chuỗi khác nhau";
     }
     document.write(result)
 </script>

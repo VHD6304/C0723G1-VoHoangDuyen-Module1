@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tìm - và thay thế thành _ </title>
 </head>
 <body>
 <script>
-    let n;
+    let n = 0;
     let arr = new Array(n);
     do {
-        n = prompt("Nhập số lượng phần tử: ");
+        n = +prompt("Nhập số lượng phần tử: ");
         if (isNaN(n) === false) {
             break;
         } else {
@@ -20,9 +20,9 @@
         arr[i] = prompt("Nhập phần tử thứ " + i);
     }
     document.write("Mảng đã nhập là " + "[" + arr + "]" + "<br>");
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] === "-") {
-            arr[i] = "_"
+            arr[i] = "_";
         }
     }
     document.write("Mảng sau khi đã sửa đổi: " + arr);
