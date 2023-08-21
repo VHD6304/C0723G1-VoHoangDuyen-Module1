@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VXKH</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        ToFahrenheit() {
+            return this.celsius * 9 / 5 + 32;
+        }
+
+        ToKenvin() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    let celsius;
+    do {
+        celsius = +prompt("Nhập vào độ C: ")
+        if (isNaN(celsius) === false) {
+            break;
+        } else {
+            alert("Nhập lại");
+        }
+    } while (true)
+
+    let temperature = new Temperature(celsius);
+    let ToFahrenheit = temperature.ToFahrenheit();
+    let ToKenvin = temperature.ToKenvin();
+    document.write("Độ F: " + ToFahrenheit + "<br>" + "Độ K: " + ToKenvin);
+</script>
+</body>
+</html>

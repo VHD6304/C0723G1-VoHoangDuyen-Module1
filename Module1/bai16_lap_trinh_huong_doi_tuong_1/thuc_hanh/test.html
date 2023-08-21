@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Date {
+        constructor(a, b, c) {
+            this.day = a;
+            this.month = b;
+            this.year = c;
+        }
+
+        setDay() { // truyền đối số vào
+            this.day = d;
+        }
+
+        setMonth(m) {
+            this.month = m;
+        }
+
+        setYear(y) {
+            this.year = y;
+        }
+
+        getDay() {
+            return this.day
+        }
+
+        getMonth() {
+            return this.month
+        }
+
+        getYear() {
+            return this.year
+        }
+
+        setDate(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        getDayYear() {
+            return this.day + " " + this.year;
+        }
+
+    }
+
+    let date = new Date(2, 2, 2007);
+
+    // date.setDay(10);
+    // date.setMonth(10);
+    // date.setYear(2019);
+    // date.setDate(1, 1, 1998)
+    let x = date.getDay();
+
+    let y = date.getMonth();
+
+    let z = date.getYear();
+
+   // document.write(date.toString())
+    //document.write(z)
+    document.write(date.getDayYear())
+    //get để lấy giá trị, set truyền giá trị vào
+</script>
+</body>
+</html>
