@@ -8,11 +8,11 @@
 <script>
     let r = +prompt("Nhập bán kính hình tròn: ");
     function dienTichHinhTron(r) {
-        let result = (r * r) * 3.14;
+        let result = (r * r) * Math.PI;
         return result;
     }
     function chuViHinhTron(r) {
-       let result = r * 2 * 3.14;
+       let result = r * 2 * Math.PI;
         return result ;
     }
     document.write("Chu vi của hình tròn là: " + chuViHinhTron(r) + "<br>")
