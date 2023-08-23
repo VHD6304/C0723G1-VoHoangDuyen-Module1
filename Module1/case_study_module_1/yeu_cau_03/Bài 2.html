@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA = [7, 2, 5, 3, 5, 3];
+    let arrB = [7, 2, 5, 4, 6, 3, 5, 3];
+
+    function missingValue(arrA, arrB) {
+        let misVal = [];
+        document.write("Mảng [A]: " + arrA);
+        document.write("<br> Mảng [B]: " + arrB);
+        for (let i = 0; i < arrB.length; i++) {
+            if (!arrA.includes(arrB[i]) && !misVal.includes(arrB[i])) {
+                misVal.push(arrB[i])
+            }
+        }
+        document.write("<br> Mảng missing [" + misVal + "]")
+    }
+
+    missingValue(arrA, arrB)
+</script>
+</body>
+</html>
