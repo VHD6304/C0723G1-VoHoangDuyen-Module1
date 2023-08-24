@@ -6,7 +6,39 @@
 </head>
 <body>
 <script>
+    let str = prompt("Nhập chuỗi muốn chuẩn hoá: ");
+    function modify(str) {
+        str = str.split(" ");
+        let arr = [];
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] !== "") {
+                arr.push(str[i])
+            }
+        }
+        let result = "";
+        for (let i = 0; i < arr.length; i++) {
+            result += arr[i][0].toUpperCase();
+            for (let j = 1; j < arr[i].length; j++) {
+                result += arr[i][j].toLowerCase();
+            }
+            result += " ";
+        }
+        return result;
+    }
 
+    function maxStr(str) {
+        str = str.split(" ");
+        let maxStr = str[0];
+        for (let i = 1; i < str.length; i++) {
+            if (maxStr.length < str[i].length) {
+                maxStr = str[i];
+            }
+        }
+        return maxStr;
+    }
+
+    document.write("Chuỗi đã chuẩn hóa: " + modify(str));
+    document.write("<br> Từ dài nhất trong chuỗi: " + maxStr(str));
 </script>
 </body>
 </html>
