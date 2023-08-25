@@ -6,17 +6,21 @@
 </head>
 <body>
 <script>
-    let string = prompt("Nhập 1 chuỗi bất kỳ: ");
-    let count = 0;
-    string = string.split("");
-    string.sort();
-    let arr = [];
-    for (let i = 0; i < string.length; i++) {
-        if (string[i] !== string[i + 1]) {
-            count++;
+    let arr = prompt("Nhập vào một chuỗi bất kỳ: ");
+
+    function differentSymbolsNaive(arr) {
+        let arrNew = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (!arrNew.includes(arr[i])) {
+                arrNew.push(arr[i]);
+            }
         }
+        return arrNew;
     }
-    document.write(count);
+
+    document.write("Chuỗi đã nhập: " + arr + "</br>");
+    document.write("Có " + differentSymbolsNaive(arr).length +
+        " ký tự khác nhau trong chuỗi: " + differentSymbolsNaive(arr));
 </script>
 </body>
 </html>

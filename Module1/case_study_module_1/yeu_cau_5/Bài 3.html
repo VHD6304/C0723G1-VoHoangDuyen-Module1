@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập n hàng: ");
+    let m = +prompt("Nhập m cột: ");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = [];
+        for (let j = 0; j < m; j++) {
+            arr[i][j] = +prompt("Nhập phần tử tại vị trí [" + i + "][" + j + "]");
+        }
+    }
+    document.write("Mảng đã nhập là:" + arr + "<br>");
+
+    function max(arr) {
+        let max = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (max < arr[i][j]) {
+                    max = arr[i][j];
+                }
+            }
+        }
+        return max;
+    }
+
+    function min(arr) {
+        let min = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (min > arr[i][j]) {
+                    min = arr[i][j];
+                }
+            }
+        }
+        return min;
+    }
+
+    document.write("Giá trị lớn nhất là: " + max(arr));
+    document.write("<br>Giá trị nhỏ nhất là: " + min(arr));
+</script>
+</body>
+</html>

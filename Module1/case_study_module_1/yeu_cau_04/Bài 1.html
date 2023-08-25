@@ -8,18 +8,18 @@
 <script>
     let str = prompt("Nhập chuỗi muốn chuẩn hoá: ");
     function modify(str) {
-        str = str.split(" ");
-        let arr = [];
+        str = str.split(" "); // chuyển mỗi tên thành mảng
+        let arr = [];   // mảng mới đây kết quả vào
         for (let i = 0; i < str.length; i++) {
             if (str[i] !== "") {
-                arr.push(str[i])
+                arr.push(str[i]) // đẩy kết quả vào mảng rỗng đã tạo
             }
         }
         let result = "";
         for (let i = 0; i < arr.length; i++) {
-            result += arr[i][0].toUpperCase();
+            result += arr[i][0].toUpperCase(); // chuyển thành chữ hoa
             for (let j = 1; j < arr[i].length; j++) {
-                result += arr[i][j].toLowerCase();
+                result += arr[i][j].toLowerCase(); // chuyển thành chữ thường
             }
             result += " ";
         }
@@ -27,7 +27,7 @@
     }
 
     function maxStr(str) {
-        str = str.split(" ");
+        str = str.split(" "); // bỏ đi khoảng trắng
         let maxStr = str[0];
         for (let i = 1; i < str.length; i++) {
             if (maxStr.length < str[i].length) {
@@ -36,9 +36,9 @@
         }
         return maxStr;
     }
-
-    document.write("Chuỗi đã chuẩn hóa: " + modify(str));
-    document.write("<br> Từ dài nhất trong chuỗi: " + maxStr(str));
+    console.log("Chuỗi đã nhập là: " + str)
+    console.log("Chuỗi đã chuẩn hóa: " + modify(str));
+    console.log("<br> Từ dài nhất trong chuỗi: " + maxStr(str));
 </script>
 </body>
 </html>

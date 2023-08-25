@@ -6,18 +6,18 @@
 </head>
 <body>
 <script>
-
-    do {
-        let n = +prompt("Nhập số cần kiểm tra: ");
-        if (!isNaN(n)) {
-            isPrime(n);
-            break;
-        } else {
-            alert("Nhập lại");
+    let n = +prompt("Nhập n hàng: ");
+    let m = +prompt("Nhập m cột: ");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = [];
+        for (let j = 0; j < m; j++) {
+            arr[i][j] = +prompt("Nhập phần tử tại vị trí [" + i + "][" + j + "]");
         }
-    } while (true)
+    }
+    document.write("Mảng đã nhập là:" + arr + "<br>");
 
-    function isPrime(n) {
+    function  isPrime() {
         let count = 0;
         if (n < 2) {
             document.write(n + " không phải là số nguyên tố");

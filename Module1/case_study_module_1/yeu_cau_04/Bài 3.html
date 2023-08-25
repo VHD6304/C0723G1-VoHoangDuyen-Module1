@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = prompt("Nhập chuỗi thứ nhất: ");
+    let arr2 = prompt("Nhập chuỗi thứ hai: ");
+
+    function commonCharacterCount(arr1, arr2) {
+        arr1 = arr1.split("");
+        arr2 = arr2.split("");
+        let arrNew = [];
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr1[i] === arr2[j]) {
+                    arrNew.push(arr2[j]);
+                    arr2.splice(j, 1);
+                    break;
+                }
+            }
+        }
+        return arrNew;
+    }
+
+    document.write("Chuỗi thứ nhất: " + arr1 + "</br>");
+    document.write("Chuỗi thứ hai: " + arr2 + "</br>");
+    document.write("Có " + commonCharacterCount(arr1, arr2).length +
+        " ký tự chung trong 2 chuỗi: " + commonCharacterCount(arr1, arr2));
+</script>
+</body>
+</html>
