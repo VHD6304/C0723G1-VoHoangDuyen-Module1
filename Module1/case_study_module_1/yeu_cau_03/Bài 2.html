@@ -10,15 +10,15 @@
     let arrB = [7, 2, 5, 4, 6, 3, 5, 3];
 
     function missingValue(arrA, arrB) {
-        let misVal = [];
-        document.write("Mảng [A]: " + arrA);
-        document.write("<br> Mảng [B]: " + arrB);
+        let arrNew = [];
+        document.write("[A]: " + arrA);
+        document.write("<br>[B]: " + arrB);
         for (let i = 0; i < arrB.length; i++) {
-            if (!arrA.includes(arrB[i]) && !misVal.includes(arrB[i])) {
-                misVal.push(arrB[i])
+            if (!arrA.includes(arrB[i]) && !arrNew.includes(arrB[i])) {
+                arrNew.push(arrB[i])
             }
         }
-        document.write("<br> Mảng missing [" + misVal + "]")
+        document.write("<br> Phần tử xuất hiện trong [B] mà không xuất hiện trong [A] là: [" + arrNew + "]")
     }
 
     missingValue(arrA, arrB)

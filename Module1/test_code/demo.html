@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A = [7, 2, 5, 3, 5, 3];
+    let B = [7, 2, 5, 4, 6, 3, 5, 3];
+    function missingValue (A, B) {
+        document.write("Mảng A: " + A);
+        document.write("<br> Mảng B: " + B);
+        let arrNew = [];
+        for (let i = 0; i < B.length; i++) {
+            if (!A.includes(B[i]) && !arrNew.includes(B[i])) {
+                arrNew.push(B[i])
+            }
+        }
+        document.write("Phần tử có ở B mà không có ở A là: " + arrNew);
+    }
+    missingValue (A, B)
+</script>
+</body>
+</html>

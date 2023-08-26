@@ -17,10 +17,10 @@
     let arr = new Array(n);
     do {
         n = +prompt("Nhập số lượng phần tử trong mảng: ");
-        if (isNaN(n) === false) {
+        if (isNaN(n) === false && n > 0) {
             break;
         } else {
-            alert("Nhập lại: ");
+            alert("Nhập lại");
         }
     } while (true)
     for (let i = 0; i < n; i++) {
