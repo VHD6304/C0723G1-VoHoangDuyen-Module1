@@ -6,6 +6,24 @@
 </head>
 <body>
 <script>
+    let num = +prompt("Nhập số lượng số nguyên tố cần tìm: ");
+    let count = 0;
+    let soUoc = 0;
+    let N = 2;
+    while (count < num) {
+        soUoc = 0;
+        for (let i = 1; i <= N; i++) {
+            if (N % i === 0) {
+                soUoc++;
+            }
+        }
+        if (soUoc === 2) {
+            document.write(N + "</br>");
+            count++;
+        }
+        N++
+    }
+
     // let a = 0;
     // let b = 0;
     // do {
@@ -22,23 +40,23 @@
     //     a++
     // } while (b < 20);
 
-    let num = +prompt("Nhập số lượng số nguyên tố cần in ra: ");
-    let count = 0;
-    let soNT;
-    let N = 2;
-    do {
-        soNT = 0;
-        for (let i = 1; i <= N; i++) {
-            if (N % i === 0) {
-                soNT++;
-            }
-        }
-        if (soNT === 2) {
-            document.write(N + "</br>");
-            count++;
-        }
-       N++
-    } while (count < num)
+    // let num = +prompt("Nhập số lượng số nguyên tố cần in ra: ");
+    // let count = 0;
+    // let soNT;
+    // let N = 2;
+    // do {
+    //     soNT = 0;
+    //     for (let i = 1; i <= N; i++) {
+    //         if (N % i === 0) {
+    //             soNT++;
+    //         }
+    //     }
+    //     if (soNT === 2) {
+    //         document.write(N + "</br>");
+    //         count++;
+    //     }
+    //    N++
+    // } while (count < num)
 
     // let isPrime = 0;
     // let checkDu20So = 0;

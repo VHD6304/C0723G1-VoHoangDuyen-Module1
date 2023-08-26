@@ -6,18 +6,41 @@
 </head>
 <body>
 <script>
-    let a = [1, 2, 3];
-    function prefixsums(a) {
-        let b = [];
-        let sum = 0;
-        for (let i = 0; i < a.length; i++) {
-            sum = sum + a[i];
-            b.push(sum);
+    // let a = [1,2,3];
+    let n = 0;
+    let arr = new Array(n);
+    do {
+        n = +prompt("Nhâp số phần tử của mảng: ");
+        if (n > 0 && !isNaN(n)) {
+            for (let i = 0; i < n; i++) {
+                do {
+                    arr[i] = +prompt("Nhập phần tử thứ " + i + " của mảng: ");
+                    if (!isNaN(arr[i])) {
+                        break;
+                    } else {
+                        alert("Vui lòng nhập số nguyên");
+                    }
+                } while (true)
+            }
+            break;
+        } else {
+            alert("Bạn vừa nhập vào không phải là số. Vui lòng nhập lại");
         }
-        return b;
+    } while (true)
+
+    function prefixSums(arr) {
+        let arrNew = [];
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+            // b.push(sum);
+            arrNew[i] = sum;
+        }
+        return arrNew;
     }
-    document.write("Mảng đã nhập là: [" + a + "] <br>" )
-    document.write("[" + prefixsums(a) + "]");
+
+    document.write("Mảng đã nhập là: [" + arr + "] <br>")
+    document.write("[" + prefixSums(arr) + "]");
 </script>
 </body>
 </html>

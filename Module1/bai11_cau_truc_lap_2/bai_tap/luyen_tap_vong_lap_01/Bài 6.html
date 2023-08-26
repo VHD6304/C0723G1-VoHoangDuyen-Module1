@@ -9,18 +9,18 @@
     let n = +prompt("Nhập giới hạn bạn muốn tìm: ");
     let count = 0;
     let tong = 0;
-    let dayso = "";
+    let daySo = "";
     for (let i = 1; ; i++) {
-        if (i % 7 == 0) {
-            dayso += i + " ";
+        if (i % 7 === 0) {
+            daySo += i + " ";
             tong += i;
             count++;
-            if (count == n) {
+            if (count === n) {
                 break;
             }
         }
     }
-    document.write(dayso + "<br>")
+    document.write(daySo + "<br>")
     document.write("Tổng bằng " + tong)
 </script>
 </body>

@@ -9,21 +9,21 @@
 <script>
     function handleClick() {
         let n = +prompt("Số muốn đoán nằm trong khoảng");
-        let rdnumber = Math.floor(Math.random() * n);
-        alert(rdnumber);
+        let rdNumber = Math.floor(Math.random() * n);
+        alert(rdNumber);
         let count = 0;
         do {
             let number = +prompt("Nhập số bạn muốn đoán:")
-            if ( number === rdnumber) {
+            if (number === rdNumber) {
                 alert("Bạn đoán đúng");
                 break;
-            } else if (number > rdnumber) {
+            } else if (number > rdNumber) {
                 alert("Só bạn nhập lớn hớn");
             } else {
                 alert("Số bạn nhập bé hơn");
             }
-            count = count +1;
-            if (count >= 3 ){
+            count = count + 1;
+            if (count >= 3) {
                 alert("Bạn đã hết lượt đoán")
                 break;
             }

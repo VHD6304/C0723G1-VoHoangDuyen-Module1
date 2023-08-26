@@ -9,14 +9,14 @@
     let numerators = [5, 2, 5];
     let denominators = [6, 3, 4];
     let max = numerators[0] / denominators[0];
-    let maxFraction = 0;
+    let index = 0;
     for (let i = 0; i < numerators.length; i++) {
         if (numerators[i] / denominators[i] > max) {
             max = numerators[i] / denominators[i];
-            maxFraction = i;
+            index = i;
         }
     }
-    document.write("Phân số lớn nhất là: " + numerators[maxFraction] + "/" + denominators[maxFraction]+ " có chỉ số là " + maxFraction)
+    document.write("Phân số lớn nhất là: " + numerators[index] + "/" + denominators[index]+ " có chỉ số là " + index)
 </script>
 </body>
 </html>

@@ -6,8 +6,16 @@
 </head>
 <body>
 <script>
-    let letter = prompt("Nhập vào một ký tự bất kỳ: ")
-    switch (letter) {
+    let char;
+    do {
+        char = prompt("Nhập vào một ký tự bất kỳ: ");
+        if (isNaN(char) === true) {
+            break;
+        } else {
+            alert("Nhập lại");
+        }
+    } while (true)
+    switch (char) {
         case "o":
         case "u":
         case "i":
@@ -18,7 +26,7 @@
         case "I":
         case "A":
         case "E":
-            alert(letter + " là Nguyên Âm");
+            alert(char + " là Nguyên Âm");
             break;
         case "q":
         case "Q":
@@ -62,10 +70,10 @@
         case "N":
         case "m":
         case "M":
-            alert(letter + " là Phụ Âm");
+            alert(char + " là Phụ Âm");
             break;
         default :
-            alert(letter + " không phải là một nguyên âm hoặc phụ âm")
+            alert(char + " không phải là một nguyên âm hoặc phụ âm")
     }
 </script>
 </body>

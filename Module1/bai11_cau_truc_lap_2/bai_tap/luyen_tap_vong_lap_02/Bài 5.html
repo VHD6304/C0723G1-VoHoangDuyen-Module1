@@ -19,7 +19,9 @@
         <td><input type="number" id="month"></td>
     </tr>
     <tr>
-        <td><button onclick="handleClick()">Kiểm tra</button> </td>
+        <td>
+            <button onclick="handleClick()">Kiểm tra</button>
+        </td>
     </tr>
 </table>
 <script>
@@ -27,14 +29,14 @@
         let money = +document.getElementById("money").value;
         let rate = +document.getElementById("rate").value;
         let month = +document.getElementById("month").value;
-        let lastlmoney = 0;
-        let totalmoney = 0;
+        let lastMoney = 0;
+        let totalMoney = 0;
         for (let i = 0; i <= month; i++) {
-            lastmoney = ((money * rate) / 100) / 12 * month;
-            totalmoney = money + lastmoney;
+            lastMoney = ((money * rate) / 100) / 12 * month;
+            totalMoney = money + lastMoney;
         }
-        document.write("Tiền lãi của bạn sau " + month + " tháng là : " + lastmoney + "VND" + "<br>")
-        document.write("Tổng tiền nhận được khi đến hạn là: " + totalmoney + " VND")
+        document.write("Tiền lãi của bạn sau " + month + " tháng là : " + lastMoney + "VND" + "<br>")
+        document.write("Tổng tiền nhận được khi đến hạn là: " + totalMoney + " VND")
     }
 </script>
 </body>
