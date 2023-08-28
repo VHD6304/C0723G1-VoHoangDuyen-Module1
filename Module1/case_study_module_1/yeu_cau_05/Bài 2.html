@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    let row = +prompt('Nhập row:');
-    let col = +prompt('Nhập col:');
+    let row = +prompt("Nhập hàng: ");
+    let col = +prompt("Nhập cột: ");
     let arr2d = new Array(row);
     for (let i = 0; i < arr2d.length; i++) {
         arr2d[i] = new Array(col);
@@ -16,38 +16,74 @@
         }
     }
     for (let row = 0; row < arr2d.length; row++) {
-        document.write('[')
+        document.write("[")
         for (let col = 0; col < arr2d[row].length; col++) {
-            document.write(arr2d[row][col] + "&nbsp;");
+            document.write(arr2d[row][col] + "&nbsp");
         }
         document.write("]");
     }
 
-    function findPrime(arr2d) {
-        let count = 0;
-        let result = [];
-        for (let i = 0; i < arr2d.length; i++) {
-            for (let j = 0; j < arr2d[i].length; j++) {
-                if (arr2d[i][j] === 1 || arr2d[i][j] === 0) {
-                    count++;
-                } else {
-                    for (let k = 2; k < arr2d[i][j] - 1; k++) {
-                        if (arr2d[i][j] % k === 0) {
-                            count++;
-                        }
-                    }
-                }
-                if (count === 0) {
-                    result.push(arr2d[i][j]);
-                } else {
-                    count = 0;
-                }
+    function findPrime(n) {
+        let soUoc = 0;
+        for (let i = 1; i <= n; i++) {
+            if (n % i === 0) {
+                soUoc++;
             }
         }
-        return result;
+        if (soUoc === 2) {
+            return true;
+        } else {
+            return false;
+        }
     }
-    document.write("<br> Các số nguyên tố có trong mảng: " + (findPrime(arr2d)));
-    console.log("Có " + isPrime(arr2d).length + " số nguyên tố có trong mảng");
+
+    let arr1 = [];
+    for (let i = 0; i < arr2d.length; i++) {
+        for (let j = 0; j < arr2d[i].length; j++) {
+            if (findPrime(arr2d[i][j])) {
+                arr1.push(arr2d[i][j]);
+            }
+        }
+    }
+    document.write("<br> Mảng chứa các số nguyên tố là: [" + arr1 + "] <br> Số lượng số nguyên tố là: " + arr1.length)
+
+    // Cách 2:
+    // let n = +prompt("Nhập n hàng: ");
+    // let m = +prompt("Nhập m cột: ");
+    // let arr = [];
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = [];
+    //     for (let j = 0; j < m; j++) {
+    //         arr[i][j] = +prompt("Nhập phần tử tại vị trí [" + i + "][" + j + "]");
+    //     }
+    // }
+
+    // function findPrime(arr2d) {
+    //     let count = 0;
+    //     let result = [];
+    //     for (let i = 0; i < arr2d.length; i++) {
+    //         for (let j = 0; j < arr2d[i].length; j++) {
+    //             if (arr2d[i][j] === 1 || arr2d[i][j] === 0) {
+    //                 count++;
+    //             } else {
+    //                 for (let k = 2; k < arr2d[i][j] - 1; k++) {
+    //                     if (arr2d[i][j] % k === 0) {
+    //                         count++;
+    //                     }
+    //                 }
+    //             }
+    //             if (count === 0) {
+    //                 result.push(arr2d[i][j]);
+    //             } else {
+    //                 count = 0;
+    //             }
+    //         }
+    //     }
+    //     return result;
+    // }
+    // document.write("<br> Các số nguyên tố có trong mảng: " + (findPrime(arr2d)));
+    // console.log("Có " + isPrime(arr2d).length + " số nguyên tố có trong mảng");
+
 </script>
 </body>
 </html>
