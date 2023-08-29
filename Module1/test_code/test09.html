@@ -6,11 +6,11 @@
 </head>
 <body>
 <script>
+    let max;
+    let min;
+    let avg;
+    let arrNew = [];
     function maxMinAvg(arr) {
-        let arrNew = [];
-        let max;
-        let min;
-        let avg;
         max = arr[0];
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
@@ -31,7 +31,7 @@
         }
         avg = sum / arr.length;
         arrNew.push(avg);
-        return arrNew
+        return arrNew;
     }
 
     let arr = [2, 3, 4, 23, 6]

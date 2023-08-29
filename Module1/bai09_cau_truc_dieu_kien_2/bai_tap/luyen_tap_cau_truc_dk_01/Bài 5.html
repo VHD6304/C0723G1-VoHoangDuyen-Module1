@@ -30,11 +30,11 @@
 <div id="result"></div>
 <script>
     function handleClick() {
-        let result = 0;
-        let kiemtra = +document.getElementById("kiemtra").value;
-        let giuaky = +document.getElementById("giuaky").value;
-        let cuoiky = +document.getElementById("cuoiky").value;
-        let dtb = (kiemtra + giuaky + cuoiky) / 3;
+        let result;
+        let kiemTra = +document.getElementById("kiemtra").value;
+        let giuaKy = +document.getElementById("giuaky").value;
+        let cuoiKy = +document.getElementById("cuoiky").value;
+        let dtb = (kiemTra + giuaKy + cuoiKy) / 3;
         if (dtb >= 8) {
             result = "Bạn đạt học lực giỏi";
         } else if (dtb >= 7) {

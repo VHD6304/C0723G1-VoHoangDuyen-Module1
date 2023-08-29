@@ -6,16 +6,30 @@
 </head>
 <body>
 <script>
-    let n = +prompt("Nhập n hàng: ");
-    let m = +prompt("Nhập m cột");
     let arr = [];
-    for (let i = 0; i < n; i++) {
-        arr[i] = [];
-        for (let j = 0; j < m; j++) {
-            arr[i][j] = +prompt(`Nhập phần tử tại " [${[i]}${[j]}]`);
+    do {
+        let n = +prompt("Nhập số hàng: ");
+        let m = +prompt("Nhập số cột: ");
+        if (!isNaN(n) && !isNaN(m) && n > 0 && m > 0) {
+            for (let i = 0; i < n; i++) {
+                arr[i] = [];
+                for (let j = 0; j < m; j++) {
+                    do {
+                        arr[i][j] = +prompt(`Nhập phần tử tại " [${[i]}][${[j]}]`);
+                        if (!isNaN(arr[i][j]) && arr[i][j] > 0 && arr[i][j] % i === 0) {
+                            break;
+                        } else {
+                            alert("Nhập lại");
+                        }
+                    } while (true)
+                }
+            }
+            document.write("Mảng đã nhập là: " + arr);
+            break;
+        } else {
+            alert("Nhập lại");
         }
-    }
-    document.write("Mảng đã nhập là: " + arr);
+    } while (true)
 
     function max(arr) {
         let max = arr[0][0];
@@ -26,8 +40,9 @@
                 }
             }
         }
-            return max;
+        return max;
     }
+
     document.write("Giá trị lớn nhất là: " + max(arr));
 </script>
 </body>

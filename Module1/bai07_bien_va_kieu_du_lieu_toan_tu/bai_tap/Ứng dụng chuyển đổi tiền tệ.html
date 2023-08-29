@@ -36,9 +36,9 @@
         let amount = document.getElementById("amount").value;
         let FC = document.getElementById("FC").value;
         let TC = document.getElementById("TC").value;
-        if (FC == "USD" && TC == "VND") {
+        if (FC === "USD" && TC === "VND") {
             result = amount * 23000;
-        } else if (FC == "VND" && TC == "USD") {
+        } else if (FC === "VND" && TC === "USD") {
             result = amount / 23000;
         } else {
             result = amount;
