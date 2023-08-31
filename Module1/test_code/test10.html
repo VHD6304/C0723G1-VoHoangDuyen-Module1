@@ -5,45 +5,99 @@
     <title>Title</title>
 </head>
 <body>
+<h1> Hệ thống quản lý CODE GYM</h1>
+<button type="button" onclick="addStudent()">Thêm sinh viên</button>
+<button type="button" onclick="editStudent()">Chính sửa sinh viên</button>
+<button type="button" onclick="deleteStudent()">Xoá sinh viên</button>
+<div id="root"></div>
 <script>
-    let arr = [];
-    do {
-        let n = +prompt("Nhập số hàng: ");
-        let m = +prompt("Nhập số cột: ");
-        if (!isNaN(n) && !isNaN(m) && n > 0 && m > 0) {
-            for (let i = 0; i < n; i++) {
-                arr[i] = [];
-                for (let j = 0; j < m; j++) {
-                    do {
-                        arr[i][j] = +prompt(`Nhập phần tử tại " [${[i]}][${[j]}]`);
-                        if (!isNaN(arr[i][j]) && arr[i][j] > 0 && arr[i][j] % i === 0) {
-                            break;
-                        } else {
-                            alert("Nhập lại");
-                        }
-                    } while (true)
-                }
-            }
-            document.write("Mảng đã nhập là: " + arr);
-            break;
-        } else {
-            alert("Nhập lại");
+    class Student {
+        constructor(studentID, name, className, email, birthday, module ) {
+            this.studentId = studentID ;
+            this.name = name;
+            this.className = className;
+            this.email = email;
+            this.birthday = birthday;
+            this.module = module;
         }
-    } while (true)
-
-    function max(arr) {
-        let max = arr[0][0];
-        for (let i = 0; i < arr.length; i++) {
-            for (let j = 0; j < arr[i].length; j++) {
-                if (max < arr[i][j]) {
-                    max = arr[i][j];
-                }
-            }
+    }
+    let student1 = new Student("HV-0001", "Nguyễn Văn A", "C1022G1", "nguyenvana@gmail.com", "01/01/2004", "1")
+    let student2 = new Student("HV-0002", "Nguyễn Văn B", "C1122G1", "nguyenvanb@gmail.com", "02/02/2004", "1");
+    let student3 = new Student("HV-0003", "Nguyễn Văn C", "C1022G1", "nguyenvanc@gmail.com", "01/03/2004", "1");
+    listStudent = [student1, student2, student3];
+    displayTable(listStudent);
+    function displayTable(listStudent) {
+        let table = `<table border="1">
+            <tr>
+                <th>Mã học viên</th>
+                <th>Tên</th>
+                <th>Lớp</th>
+                <th>Email</th>
+                <th>Ngày sinh</th>
+                <th>Module</th>
+            </tr>`
+        for (let i = 0; i < listStudent.length; i++) {
+            table += `<tr>
+                <td>${listStudent[i].studentId}</td>
+                <td>${listStudent[i].name}</td>
+                <td>${listStudent[i].className}</td>
+                <td>${listStudent[i].email}</td>
+                <td>${listStudent[i].birthday}</td>
+                <td>${listStudent[i].module}</td>
+            </tr>`
+            table += `</table>`
         }
-        return max;
+        document.getElementById("root").innerHTML = table;
+    }
+    function addStudent() {
+        let newStudentId = prompt("Nhập mã học viên: ");
+        let newName = addName();
+        let newClassName = prompt("Nhập tên lớp: ");
+        let newEmail = prompt("Nhập email: ");
+        let newBirthday = prompt("Nhập ngày sinh: ");
+        let newModule = addModule();
+        let newStudent = new Student(newStudentId, newName, newClassName, newEmail, newBirthday, newModule);
+        listStudent.push(newStudent);
+        displayTable(listStudent)
     }
 
-    document.write("Giá trị lớn nhất là: " + max(arr));
+    function editStudent() {
+        let edit = prompt("Nhập tên học viên muốn chỉnh sửa");
+        let count = 0;
+        for (let i = 0; i < listStudent.length; i++) {
+            if (edit === listStudent[i].studentId) {
+                listStudent[i].studentId = prompt("Nhập lại mã học viên");
+                listStudent[i].name = prompt("Nhập lại tên học viên: ");
+                listStudent[i].className = prompt("Nhập lại lớp học viên")
+                count++;
+                break;
+            }
+            if (count === 0) {
+                alert("Mã học viên không chính xác")
+            }
+        }
+        displayTable(listStudent)
+    }
+
+    function deleteStudent() {
+        let deleteID = prompt("Nhập id học viên muốn xoá");
+        let count = 0;
+        for (let i = 0; i < listStudent.length; i++) {
+            if (deleteID === listStudent[i].studentId) {
+                confirm("Bạn có chắc chắn muốn xoá học viên")
+                if (confirm) {
+                    listStudent.splice(i,1);
+                    alert("Bạn đã xoá học viên");
+                    count++
+                }
+                break;
+            }
+        }
+        if (count === 0) {
+            alert("Mã học viên không chính xác")
+        }
+        displayTable(listStudent)
+    }
 </script>
 </body>
 </html>

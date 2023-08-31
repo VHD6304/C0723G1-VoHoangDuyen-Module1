@@ -7,12 +7,13 @@
 <body>
 <script>
     let str = prompt("Nhập chuỗi muốn chuẩn hoá: ");
+
     function modify(str) {
         str = str.split(" "); // chuyển mỗi tên thành mảng
         let arr = [];   // mảng mới đây kết quả vào
         for (let i = 0; i < str.length; i++) {
             if (str[i] !== "") {
-                arr.push(str[i]) // đẩy kết quả vào mảng rỗng đã tạo
+                arr.push(str[i]); // đẩy kết quả vào mảng rỗng đã tạo
             }
         }
         let result = "";
@@ -36,8 +37,9 @@
         }
         return maxStr;
     }
-    console.log("Chuỗi đã nhập là: " + str)
-    console.log("Chuỗi đã chuẩn hóa: " + modify(str));
+
+    console.log("Chuỗi đã nhập là: " + str);
+    console.log("Chuỗi đã chuẩn hoá: " + modify(str));
     console.log("<br> Từ dài nhất trong chuỗi: " + maxStr(str));
 </script>
 </body>

@@ -20,9 +20,7 @@
     </tr>
 </table>
 <br>
-<div id="createTable">
-
-</div>
+<div id="root"></div>
 <script>
     class Student {
         constructor(idHV, nameHV, classHV, emailHV, dOB, module) {
@@ -90,7 +88,7 @@
         }
 
         result += `</table>`
-        document.getElementById('createTable').innerHTML = result
+        document.getElementById('root').innerHTML = result
     }
 
     function addStudent() {
